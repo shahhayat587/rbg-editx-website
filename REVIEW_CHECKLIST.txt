@@ -1,0 +1,24 @@
+FINAL REVIEW — 16 OCT 2026
+
+Checks performed:
+- HTML structure and included relative file paths
+- H.264 MP4 codec checks for 4 originals (all valid, yuv420p)
+- 320px, 390px, 768px and 1365px render width checks (no horizontal overflow)
+- Mobile navigation opening/closing
+- Portfolio category filtering 4 -> 1 -> 4
+- Portfolio video modal open + Escape close
+- Choose Pro package fills order selection
+- WhatsApp order builder encodes requested contact number, package, client brief and reference
+- JavaScript browser event error check (none encountered in synthetic local preview)
+
+Boundaries:
+Automated browser in this environment cannot navigate to localhost/external services, so live video playback inside a deployed browser, actual WhatsApp send and actual Vercel deployment still need verification after publishing.
+Fonts may vary if external Google Fonts are blocked by the user's network.
+
+Step 8 Pricing Update:
+- Basic Rs. 500 / 6 hours
+- Pro Rs. 1,000 / 12 hours
+- Premium Rs. 1,500 / within 1 day
+- Homepage, videos and remaining sections unchanged
+- Pricing CTA auto-selects both package and suggested delivery
+- Video length limits and revisions unchanged, awaiting explicit approval

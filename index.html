@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#080808" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="description" content="RBG EDITX — cinematic video editing studio for gaming montages, typography, reels, brand promos, motion graphics and creative design." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RBG EDITX" />
+  <meta property="og:locale" content="en_PK" />
+  <meta property="og:title" content="RBG EDITX | Video Editing, Gaming &amp; Motion Graphics" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="RBG EDITX | Professional Video Editing" />
+  <meta name="twitter:description" content="Watch four real RBG EDITX projects: gaming montage, cinematic reel, typography and promotional video." />
+  <meta property="og:description" content="Video Editing • Gaming Montages • Alight Motion Reels • Brand Promotions" />
+  <title>RBG EDITX | Professional Editing & Creative Designs</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"RBG EDITX","description":"Freelance creative editing service offering video editing, gaming montages, motion typography, Alight Motion reels, promotional videos, and graphic design.","telephone":"+923149259649","availableLanguage":["English","Urdu"],"areaServed":{"@type":"Place","name":"Online"},"sameAs":["https://www.youtube.com/@trendoflexx","https://www.tiktok.com/@trondoflexx","https://www.facebook.com/profile.php?id=61589310357498"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"Editing Services","itemListElement":[{"@type":"OfferCatalog","name":"Video Editing"},{"@type":"OfferCatalog","name":"Gaming Montages"},{"@type":"OfferCatalog","name":"Alight Motion CC + XML"},{"@type":"OfferCatalog","name":"Typography & Motion Graphics"},{"@type":"OfferCatalog","name":"Brand Promotional Videos"},{"@type":"OfferCatalog","name":"Graphic Design"}]}}</script>
+  <style>
+    :root { --red:#ff232d; --red-bright:#ff333b; --white:#f9f9f9; --muted:#bcbcbc; --black:#050505; --panel:#101012; --stroke:rgba(255,255,255,.14); --max:1090px; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top:90px; }
+    body { margin:0; overflow-x:hidden; font-family:'Rajdhani',Arial,sans-serif; font-size:19px; line-height:1.42; color:var(--white); background:#050505; }
+    body::before { content:""; position:fixed; inset:0; z-index:-3; pointer-events:none; background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.23)),url('brush-bg.svg') center top / 100% auto repeat-y; }
+    body::after { content:""; position:fixed; inset:0; z-index:-2; pointer-events:none; background:linear-gradient(90deg,rgba(0,0,0,.36),transparent 36%,transparent 65%,rgba(0,0,0,.3)),radial-gradient(circle at 50% 10%,transparent,#000b 115%); }
+    button,input,textarea,select { font:inherit; }
+    button,a { -webkit-tap-highlight-color:transparent; }
+    a { color:inherit; text-decoration:none; }
+    img { max-width:100%; }
+    button { cursor:pointer; }
+    .container { width:min(calc(100% - 40px),var(--max)); margin-inline:auto; }
+    .topbar { height:80px; position:relative; z-index:20; display:flex; align-items:center; background:rgba(0,0,0,.73); border-bottom:1px solid rgba(255,44,56,.18); backdrop-filter:blur(13px); }
+    .topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+    .brand { color:var(--red-bright); font:800 clamp(22px,4.5vw,33px)/1 'Oxanium',sans-serif; letter-spacing:1.5px; text-shadow:0 0 14px #f001,0 0 21px #fb121c9c; white-space:nowrap; }
+    .nav { display:flex; align-items:center; gap:27px; }
+    .nav a { font-size:16px; font-weight:700; text-transform:uppercase; letter-spacing:.7px; transition:color .2s; }
+    .nav a:hover,.nav a:focus-visible { color:var(--red); }
+    .nav .nav-cta { padding:9px 20px; border-radius:50px; color:white; background:var(--red); box-shadow:0 0 16px #f22a3552; }
+    .menu-toggle { display:none; color:white; border:1px solid var(--stroke); background:#141414; width:42px; height:42px; border-radius:9px; font-size:24px; }
+    .section-heading { margin:0 auto 36px; text-align:center; text-transform:uppercase; letter-spacing:1.3px; color:var(--red); font:800 clamp(36px,6.5vw,65px)/1.05 'Oxanium',Arial,sans-serif; text-shadow:0 0 16px rgba(255,0,24,.65),0 0 30px #be040729; }
+    .section-label { margin:0 0 10px; color:#999; text-align:center; letter-spacing:7px; text-transform:uppercase; font-weight:700; font-size:13px; }
+    .hero { min-height:570px; padding:74px 0 85px; display:flex; align-items:center; position:relative; isolation:isolate; border-bottom:2px solid rgba(255,35,45,.7); }
+    .hero::before { content:""; position:absolute; inset:0; z-index:-1; background:radial-gradient(ellipse at center,rgba(0,0,0,.2),rgba(0,0,0,.27) 57%,#0002 85%); }
+    .hero-content { text-align:center; }
+    .hero h1 { margin:0; color:#fff; font:800 clamp(60px,10.6vw,125px)/.94 'Oxanium',Arial,sans-serif; letter-spacing:3px; text-shadow:0 0 9px #ff36367a,0 4px 25px #000; }
+    .hero h1 span { display:block; }
+    .hero p { margin:25px auto 27px; max-width:800px; font-size:clamp(19px,2.5vw,25px); font-weight:600; line-height:1.7; text-shadow:0 2px 9px #000; }
+    .hero .intro-line { width:132px; height:3px; border-radius:12px; background:var(--red); box-shadow:0 0 18px var(--red); margin:0 auto 14px; }
+    .social-links { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:15px; max-width:660px; margin:auto; }
+    .pill { background:linear-gradient(180deg,#ff343d,#df0712); border:1px solid #ff586088; color:white; border-radius:100px; display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:48px; padding:11px 18px; font:700 16px/1.15 'Rajdhani',Arial,sans-serif; box-shadow:0 0 13px #f51f2e9c,0 0 25px #fa001037, inset 0 1px #ffffff44; transition:transform .2s ease,filter .2s ease,box-shadow .2s; }
+    .pill:hover,.pill:focus-visible { transform:translateY(-3px); filter:brightness(1.12); box-shadow:0 0 22px #fa00108c; }
+    .ticker { background:rgba(0,0,0,.75); color:#a4a4a4; text-align:center; letter-spacing:7px; text-transform:uppercase; font-size:14px; font-weight:700; padding:22px 12px; border-bottom:1px solid rgba(255,255,255,.07); }
+    .section { padding:95px 0; position:relative; }
+    .services { background:linear-gradient(180deg,#0009,#0005); }
+    .service-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:19px; }
+    .service-item { min-height:170px; padding:26px 26px 24px; border-radius:14px; background:linear-gradient(145deg,rgba(10,10,10,.93),rgba(15,15,16,.74)); border:1px solid var(--stroke); border-left:3px solid #ff2633; box-shadow:0 10px 25px rgba(0,0,0,.2); transition:transform .2s, border-color .2s; }
+    .service-item:hover { transform:translateY(-4px); border-color:#e92b43aa; }
+    .service-item h3 { margin:0 0 6px; font-size:26px; line-height:1.2; font-weight:700; }
+    .service-item h3 .emoji { margin-right:8px; }
+    .service-item p { margin:0; color:#d5d5d5; font-size:19px; line-height:1.4; }
+    .pricing { background:linear-gradient(180deg,rgba(0,0,0,.23),rgba(0,0,0,.84)); }
+    .price-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; align-items:stretch; }
+    .price-card { display:flex; flex-direction:column; align-items:center; gap:8px; padding:34px 20px 27px; border:1px solid #4c1820; border-radius:16px; background:linear-gradient(150deg,#16090ccc,#070708f2); text-align:center; box-shadow:0 12px 30px #0009; }
+    .price-card.featured { border-color:var(--red); box-shadow:0 0 23px rgba(255,35,45,.25),0 12px 35px #000b; }
+    .price-card h3 { font:700 30px/1 'Rajdhani',sans-serif; margin:8px 0 0; }
+    .price-card p { font-size:19px; color:#ddd; margin:0; min-height:52px; }
+    .price { font:800 48px/1.3 'Oxanium',sans-serif; }
+    .price span { font-size:22px; }
+    .price-card .pill { min-width:150px; margin-top:auto; }
+    .price-badge { color:#ffb4b7; font-size:12px; letter-spacing:2px; text-transform:uppercase; font-weight:700; min-height:18px; }
+    .reviews { background:linear-gradient(180deg,#0008,#0005); }
+    .review-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+    .review-card { background:rgba(4,4,4,.82); border:1px solid #ffffff22; border-radius:14px; padding:30px 24px; min-height:190px; text-align:center; }
+    .stars { color:#ffd52b; font-size:29px; white-space:nowrap; letter-spacing:3px; line-height:1.25; text-shadow:0 0 9px #eeb60035; }
+    .review-card blockquote { margin:13px 0 8px; font-size:21px; color:#f1f1f1; }
+    .review-card strong { font-size:21px; }
+    .order { background:linear-gradient(180deg,rgba(0,0,0,.63),rgba(0,0,0,.86)); }
+    .order-intro { max-width:650px; margin:-15px auto 32px; text-align:center; color:#ddd; font-size:20px; }
+    .form-card { max-width:620px; margin-inline:auto; background:rgba(8,8,8,.94); border:1px solid #ff2b362e; border-radius:17px; padding:26px; box-shadow:0 12px 35px #000a; }
+    .form-field { margin-bottom:18px; }
+    .form-field label { display:block; margin-bottom:7px; font-weight:700; font-size:18px; color:#eaeaea; }
+    .form-card input,.form-card select,.form-card textarea { display:block; width:100%; padding:14px 15px; border:1px solid #404040; outline:none; background:#f7f7f7; color:#181818; border-radius:7px; font-family:'Rajdhani',sans-serif; font-size:19px; font-weight:600; transition:box-shadow .2s,border-color .2s; }
+    .form-card input:focus,.form-card select:focus,.form-card textarea:focus { border-color:var(--red); box-shadow:0 0 0 3px #ff232d47; }
+    .form-card textarea { resize:vertical; min-height:135px; }
+    .form-card input::placeholder,.form-card textarea::placeholder { color:#888; font-weight:500; }
+    .submit-button { width:100%; border:none; border-radius:100px; min-height:52px; background:linear-gradient(180deg,#ff353f,#e4000f); color:white; font-size:20px; font-weight:700; box-shadow:0 0 20px #ff152b78; transition:filter .2s,transform .2s; }
+    .submit-button:hover { transform:translateY(-2px); filter:brightness(1.12); }
+    .form-tip { margin:13px 0 0; color:#999; font-size:15px; text-align:center; }
+    .contact { padding:85px 0 80px; background:#000a; border-top:1px solid #a71a245b; }
+    .contact p { text-align:center; font-size:23px; margin:0 auto 25px; max-width:700px; }
+    .contact .social-links { max-width:620px; }
+    .footer { background:#030303; border-top:2px solid var(--red); padding:35px 0 38px; text-align:center; }
+    .footer .brand { font-size:27px; }
+    .footer p { margin:16px 0 7px; color:#adadad; font-size:18px; }
+    .footer small { color:#828282; font-size:16px; }
+    .floating-wa { position:fixed; right:20px; bottom:20px; z-index:30; border:none; border-radius:100px; padding:15px 21px; background:#22ce63; color:white; font-weight:700; font-size:18px; box-shadow:0 7px 23px #000a,0 0 16px #14d86142; display:inline-flex; align-items:center; gap:9px; }
+    .floating-wa svg { width:21px; height:21px; fill:currentColor; }
+    .floating-wa:hover { background:#16b953; }
+    .toast { position:fixed; z-index:100; bottom:92px; left:50%; transform:translate(-50%,20px); max-width:min(90vw,420px); width:max-content; background:#222; color:white; border:1px solid #ff4b55; border-radius:9px; padding:14px 18px; font-size:16px; opacity:0; visibility:hidden; transition:opacity .25s, transform .25s,visibility .25s; box-shadow:0 12px 28px #0009; }
+    .toast.show { opacity:1; visibility:visible; transform:translate(-50%,0); }
+    :focus-visible { outline:3px solid #fff; outline-offset:3px; }
+    @media(max-width:800px) {
+      .topbar { height:75px; }
+      .menu-toggle { display:block; }
+      .nav { display:none; position:absolute; right:20px; top:68px; padding:18px 22px; min-width:220px; background:#0b0b0bef; border:1px solid #55151a; border-radius:12px; flex-direction:column; gap:18px; align-items:stretch; box-shadow:0 20px 25px #000a; }
+      .nav.open { display:flex; }
+      .nav a { padding:7px 2px; }
+      .nav .nav-cta { text-align:center; }
+      .hero { min-height:525px; padding:77px 0 73px; }
+      .social-links { grid-template-columns:repeat(2,minmax(0,1fr)); max-width:360px; gap:14px; }
+      .price-grid { grid-template-columns:1fr; max-width:420px; margin:auto; }
+      .review-grid { grid-template-columns:1fr; max-width:540px; margin:auto; }
+    }
+    @media(max-width:620px) {
+      .container { width:min(calc(100% - 36px),var(--max)); }
+      .brand { font-size:26px; }
+      .hero { min-height:510px; }
+      .hero h1 { font-size:clamp(54px,16vw,90px); letter-spacing:0; }
+      .hero p { font-size:19px; line-height:1.7; max-width:340px; }
+      .social-links { max-width:310px; gap:13px; }
+      .pill { min-height:44px; font-size:16px; padding:10px 12px; }
+      .section { padding:73px 0; }
+      .section-heading { font-size:clamp(36px,9.7vw,52px); margin-bottom:29px; }
+      .section-label { font-size:11px; letter-spacing:5px; }
+      .ticker { font-size:11px; letter-spacing:4px; padding:15px 8px; }
+      .service-grid { grid-template-columns:1fr; gap:14px; }
+      .service-item { padding:18px 20px; min-height:0; background:rgba(0,0,0,.56); }
+      .service-item h3 { font-size:23px; }
+      .service-item p { font-size:19px; }
+      .price-card { gap:7px; padding:27px 18px; }
+      .price-card p { min-height:0; }
+      .price { font-size:41px; }
+      .review-card { padding:23px 16px; min-height:0; }
+      .stars { font-size:27px; }
+      .form-card { padding:17px; }
+      .contact p { font-size:20px; }
+      .floating-wa { right:13px; bottom:15px; padding:13px 15px; font-size:17px; }
+    }
+
+    /* Premium showcase: only final/AFTER results, never a before/after comparison */
+    .hero-actions { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:12px; margin:22px auto 0; }
+    .outline-pill { border:1px solid #ff4b55; background:#080808bf; box-shadow:inset 0 0 16px #ff1d291e; }
+    .results { background:linear-gradient(180deg,#030303b9,#070203da); }
+    .section-description { margin:-16px auto 30px; color:#cdcdcd; max-width:640px; font-size:20px; text-align:center; }
+    .results-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+    .result-card { overflow:hidden; border:1px solid #68232a; border-radius:16px; background:linear-gradient(160deg,#150708,#070707); box-shadow:0 14px 35px #0009; }
+    .result-card.feature-result { grid-column:span 2; }
+    .result-frame { height:auto; aspect-ratio:16 / 9; background:linear-gradient(135deg,#070607 15%,#451117 54%,#070607 100%); position:relative; overflow:hidden; }
+    .result-card:not(.feature-result) .result-frame { aspect-ratio:16/10; }
+    .result-frame::before { content:'EDITX'; position:absolute; font:800 clamp(55px,10vw,150px)/1 'Oxanium',sans-serif; letter-spacing:-6px; color:#ff233016; transform:rotate(-12deg); bottom:-4px; left:-14px; }
+    .result-frame video { display:none; position:relative; z-index:2; height:100%; width:100%; object-fit:contain; background:#050505; }
+    .result-frame.is-ready video { display:block; }
+    .result-frame.is-ready .result-placeholder { display:none; }
+    .result-placeholder { position:absolute; inset:0; z-index:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; text-align:center; padding:20px; }
+    .result-placeholder svg { width:54px; height:54px; color:#ff4a50; filter:drop-shadow(0 0 14px #ff283f88); }
+    .result-placeholder strong { font:800 clamp(23px,4vw,40px)/1.1 'Oxanium',sans-serif; text-shadow:0 0 18px #f141486b; }
+    .result-placeholder small { max-width:330px; color:#cbcbcb; font-size:16px; }
+    .result-info { display:flex; justify-content:space-between; align-items:center; gap:16px; padding:19px 23px 22px; }
+    .result-info h3 { margin:0 0 4px; font-size:24px; line-height:1.18; }
+    .result-info p { margin:0; color:#c0c0c0; font-size:17px; }
+    .result-tag { white-space:nowrap; color:#ffb5b8; border:1px solid #792029; background:#5d112230; border-radius:30px; padding:5px 11px; font-size:12px; font-weight:700; letter-spacing:1px; }
+    .result-note { color:#adadad; text-align:center; margin:22px auto 0; max-width:680px; font-size:16px; }
+    .showreel-cta { text-align:center; margin:27px 0 0; }
+    .package-points { padding:0; list-style:none; margin:6px 0 20px; text-align:left; width:100%; }
+    .package-points li { padding:8px 0 8px 25px; border-bottom:1px solid #ffffff12; color:#e3e3e3; font-size:17px; position:relative; }
+    .package-points li::before { content:'✓'; color:#ff4a52; position:absolute; left:2px; font-weight:800; }
+    .pricing-note { margin:23px auto 0; color:#bbb; font-size:16px; max-width:650px; text-align:center; }
+    .faq { background:linear-gradient(180deg,#000b,#070708ed); }
+    .faq-list { max-width:780px; margin:0 auto; display:grid; gap:11px; }
+    .faq-list details { background:#111113e8; border:1px solid #64202b; border-radius:12px; overflow:hidden; }
+    .faq-list summary { padding:17px 19px; font-weight:700; font-size:21px; cursor:pointer; display:flex; justify-content:space-between; gap:12px; list-style:none; }
+    .faq-list summary::-webkit-details-marker { display:none; }
+    .faq-list summary::after { content:'+'; color:#ff4952; font:800 23px/1 'Oxanium',sans-serif; }
+    .faq-list details[open] summary::after { content:'−'; }
+    .faq-list details p { margin:0; padding:0 19px 20px; color:#d5d5d5; font-size:18px; }
+    @media(max-width:620px) {
+      .results-grid { grid-template-columns:1fr; gap:16px; }
+      .result-card.feature-result { grid-column:span 1; }
+      .result-card .result-frame { aspect-ratio:16/10; }
+      .result-info { padding:16px; }
+      .result-info h3 { font-size:21px; }
+      .result-tag { font-size:10px; }
+      .hero-actions .pill { min-width:142px; }
+      .section-description { font-size:18px; }
+    }
+
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; animation:none!important; } }
+
+    /* Final delivered portfolio: actual videos & custom preview posters */
+    .results-grid { gap:24px; align-items:start; }
+    .result-card { transition: transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
+    .result-card:hover { transform:translateY(-4px); border-color:#ed3441; box-shadow:0 0 25px #ff17282b,0 14px 35px #0009; }
+    .result-frame { background:#050506; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+    .result-card .result-frame.result-frame--landscape { aspect-ratio:16 / 10; }
+    .result-card .result-frame.result-frame--square { aspect-ratio:1 / 1; }
+    .result-frame::before { display:none; }
+    .result-card .result-frame video,.result-frame video { display:block; position:relative; width:100%; height:100%; object-fit:contain; background:#050506; }
+    .result-info { align-items:center; }
+    .result-info h3 { font-size:clamp(22px,2.8vw,26px); }
+    .result-index { margin:0 0 7px!important; color:#ff5a61!important; font:700 12px/1.3 'Oxanium',Arial,sans-serif!important; letter-spacing:2px; }
+    .result-tag { flex-shrink:0; }
+    .showreel-cta { display:flex; flex-wrap:wrap; justify-content:center; gap:12px; }
+    .review-card h3 { font:700 28px/1.2 'Rajdhani',sans-serif; margin:12px 0 6px; }
+    .review-card p { font-size:19px; color:#c8c8c8; margin:0; }
+    .benefit-icon { font:800 32px/1 'Oxanium',sans-serif; color:#ff303d; text-shadow:0 0 16px #fa283f85; }
+    @media(max-width:620px) {
+      .results-grid {gap:19px;}
+      .result-frame--landscape {aspect-ratio:16/10!important;}
+      .result-frame--square {aspect-ratio:1/1!important;}
+      .result-info {align-items:start;gap:9px;}
+      .result-tag {font-size:9px;padding:5px 8px;}
+      .result-index {font-size:10px!important;}
+    }
+
+    /* Homepage final polish — existing red neon RBG EDITX brand preserved */
+    .topbar { position:sticky; top:0; z-index:50; background:rgba(5,5,6,.92); }
+    .brand { color:#ff2935; text-shadow:0 0 8px #ff0b27aa,0 0 20px #ff102d9a,0 0 38px #c6001b6b; }
+    .hero--finished { min-height:min(790px,calc(100svh - 72px)); padding:78px 0 65px; overflow:hidden; background:linear-gradient(180deg,rgba(0,0,0,.36),rgba(0,0,0,.40) 60%,rgba(0,0,0,.84)); }
+    .hero--finished::before { background:radial-gradient(ellipse at 50% 44%,#1a020750 5%,#07070950 48%,#000a 90%); }
+    .hero-light { position:absolute; border-radius:50%; pointer-events:none; filter:blur(74px); z-index:-1; }
+    .hero-light--one { width:440px; height:350px; top:-156px; left:calc(50% - 245px); background:#c90a1d46; }
+    .hero-light--two { width:340px; height:260px; bottom:-170px; right:-100px; background:#c2121835; }
+    .hero--finished .hero-content { max-width:820px; position:relative; }
+    .hero-eyebrow { display:inline-flex; align-items:center; gap:10px; border:1px solid #ff566647; border-radius:100px; background:#100306b8; color:#e5c6c9; padding:8px 17px; font:700 12px/1.2 'Oxanium',Arial,sans-serif; letter-spacing:2.2px; margin:0 0 26px; }
+    .hero-signal { display:inline-block; height:7px; width:7px; border-radius:50%; background:#ff303c; box-shadow:0 0 0 3px #ff333023,0 0 13px #ff1e32; animation:signal-pulse 2s ease-in-out infinite; }
+    .hero--finished .intro-line { height:2px; width:112px; margin:0 auto 19px; }
+    .hero--finished h1 { color:#f5f5f6; margin:0; font-size:clamp(72px,12vw,128px); line-height:.9; letter-spacing:2px; text-shadow:0 5px 35px #000,0 0 20px #fa152727; }
+    .hero-word--red { color:#ff343e; text-shadow:0 0 9px #fe252b8f,0 0 26px #e200218a,0 0 60px #b2001b44; }
+    .hero-strapline { font:700 clamp(12px,2.3vw,17px)/1.5 'Oxanium',Arial,sans-serif; letter-spacing:clamp(2px,.6vw,5px); color:#f4eeee; margin:26px 0 0; }
+    .hero--finished .hero-description { color:#d8d1d2; max-width:650px; margin:15px auto 0; font-size:clamp(17px,2vw,21px); font-weight:600; line-height:1.7; }
+    .hero-description span { color:#ff4953; margin:0 4px; }
+    .hero-actions--primary { margin:30px auto 0; gap:14px; }
+    .hero-actions--primary .pill { min-width:208px; min-height:51px; font:700 17px/1.2 'Rajdhani',Arial,sans-serif; }
+    .hero-primary { background:linear-gradient(120deg,#ff2d39,#b8071e); }
+    .hero-secondary { background:#0a0509d9; border:1px solid #b52e3e; box-shadow:inset 0 1px #ffffff16,0 0 14px #aa122920; }
+    .hero-social-label { display:flex; align-items:center; justify-content:center; gap:12px; margin:35px auto 13px; color:#9c868a; font:700 11px/1 'Oxanium',Arial,sans-serif; letter-spacing:2.8px; }
+    .hero-social-label span { height:1px; width:32px; background:linear-gradient(90deg,transparent,#942530); }
+    .hero-social-label span:last-child { transform:rotate(180deg); }
+    .hero-socials { max-width:590px; gap:11px; }
+    .hero-socials .pill { background:rgba(18,5,8,.86); border:1px solid #a73342; border-radius:10px; min-height:46px; font-size:17px; box-shadow:inset 0 0 17px #fa12121c,0 7px 16px #0005; }
+    .hero-socials .pill:hover { background:#e2172a; }
+    .hero-scroll { display:inline-flex; align-items:center; gap:10px; color:#998a8d; font:700 11px/1 'Oxanium',Arial,sans-serif; letter-spacing:2px; margin:29px 0 0; }
+    .hero-scroll span { font-size:18px; color:#ff3540; }
+    @keyframes signal-pulse { 50% { opacity:.45; box-shadow:0 0 0 6px #ff333020,0 0 18px #ff1e32; } }
+    @media(max-width:800px) {
+      .hero--finished { min-height:0; padding:72px 0 62px; }
+      .hero--finished h1 { font-size:clamp(70px,15vw,116px); }
+    }
+    @media(max-width:620px) {
+      .topbar { height:66px; }
+      .brand { font-size:clamp(20px,6.3vw,26px); }
+      .hero--finished { padding:50px 0 44px; }
+      .hero-eyebrow { font-size:9.5px; padding:8px 12px; letter-spacing:1.4px; margin-bottom:24px; }
+      .hero--finished .intro-line { width:82px; margin-bottom:18px; }
+      .hero--finished h1 { font-size:clamp(66px,19vw,92px); line-height:.93; }
+      .hero-strapline { font-size:11px; letter-spacing:2.25px; margin-top:22px; }
+      .hero--finished .hero-description { max-width:340px; font-size:16.5px; line-height:1.57; margin-top:13px; }
+      .hero-description span { margin:0 2px; }
+      .hero-actions--primary { margin-top:24px; gap:10px; }
+      .hero-actions--primary .pill { flex:1 1 0; min-width:0; padding:12px 9px; min-height:47px; font-size:14px; }
+      .hero-social-label { margin-top:28px; }
+      .hero-socials { max-width:334px; gap:10px; }
+      .hero-socials .pill { font-size:15.5px; min-height:44px; }
+      .hero-scroll { margin-top:25px; }
+      .nav { top:63px; }
+    }
+    @media(max-width:350px) {
+      .hero-actions--primary { flex-direction:column; }
+      .hero-actions--primary .pill { width:100%; }
+      .hero--finished h1 { font-size:clamp(57px,18.5vw,70px); }
+      .hero-strapline { letter-spacing:1.3px; }
+    }
+    @media(prefers-reduced-motion:reduce) { .hero-signal { animation:none; } }
+
+
+    /* Step 2: refined services layout — preserves existing glowing red brand style. */
+    .services--pro { background: radial-gradient(ellipse at 50% 10%,#270b0d88,transparent 58%),linear-gradient(180deg,#040303,#0b0506 48%,#030303); }
+    .services-intro { max-width:715px; margin:-15px auto 35px; line-height:1.55; }
+    .service-grid--pro { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+    .service-item--pro { display:flex; flex-direction:column; min-width:0; min-height:323px; position:relative; overflow:hidden; border:1px solid #692630; border-top:1px solid #a5363e; border-left:1px solid #692630; border-radius:17px; padding:25px 23px 21px; background:linear-gradient(155deg,rgba(27,11,14,.97) 0%,rgba(10,9,10,.98) 59%,#050505 100%); box-shadow:0 9px 33px #000b,inset 0 1px #fff1; }
+    .service-item--pro::before { content:''; position:absolute; right:-90px; top:-85px; width:205px; height:205px; border-radius:50%; background:radial-gradient(circle,#fc2a3a13,transparent 70%); pointer-events:none; }
+    .service-item--pro:hover,.service-item--pro:focus-within { border-color:#fc4250; transform:translateY(-5px); box-shadow:0 12px 35px #000b,0 0 21px #ed20331e; }
+    .service-card-top { display:flex; justify-content:space-between; align-items:start; margin-bottom:18px; }
+    .service-icon { display:grid; place-items:center; flex:none; width:51px; height:51px; border:1px solid #a73849; border-radius:14px; color:#ff5560; background:linear-gradient(135deg,#43141f,#16080d); box-shadow:inset 0 0 22px #fa152c12,0 3px 15px #f51a2914; }
+    .service-icon svg { width:27px; height:27px; }
+    .service-index { color:#a9888d; font:700 11px/1.4 'Oxanium',sans-serif; letter-spacing:1px; white-space:nowrap; }
+    .service-item--pro h3 { font:800 clamp(19px,2vw,23px)/1.21 'Oxanium',Arial,sans-serif; letter-spacing:.1px; margin:0 0 10px; color:#fff; }
+    .service-item--pro p { color:#bfb7ba; font-size:17px; line-height:1.5; font-weight:500; margin:0 0 19px; }
+    .service-tagline { margin-top:auto; padding:11px 0 14px; border-bottom:1px solid #5b333746; color:#fa9198; font:700 11px/1.3 'Oxanium',Arial,sans-serif; letter-spacing:.5px; }
+    .service-action { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-top:11px; min-height:36px; color:#fff; font:700 16px/1.2 'Rajdhani',sans-serif; }
+    .service-action span { color:#ff4b59; font-size:24px; transition:transform .2s; }
+    .service-action:hover span,.service-action:focus-visible span { transform:translate(3px,-3px); }
+    .services-bottom { display:flex; align-items:center; justify-content:center; gap:16px; flex-wrap:wrap; margin:27px auto 0; text-align:center; color:#aaa; font:700 12px/1.4 'Oxanium',sans-serif; letter-spacing:.9px; }
+    .services-bottom a { color:#ff6873; text-decoration:underline; text-underline-offset:4px; font-size:13px; }
+    @media(max-width:950px) { .service-grid--pro { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:620px) { .service-grid--pro { grid-template-columns:1fr; gap:15px; } .service-item--pro { min-height:295px; padding:22px; } .service-item--pro h3 { font-size:21px; } .service-item--pro p { font-size:17px; } .services-intro { font-size:17px; } .services-bottom { flex-direction:column; gap:9px; } }
+
+    /* STEP 3 — AFTER RESULT: responsive real-video showcase. */
+    .results--premium { background:radial-gradient(ellipse at 48% 8%,#3c08162e,transparent 58%),linear-gradient(180deg,#050405,#0d0609 53%,#050405); }
+    .results--premium .results-intro { max-width:670px; margin-top:-13px; margin-bottom:30px; line-height:1.5; }
+    .portfolio-toolbar { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; margin:0 0 23px; }
+    .portfolio-filters { display:flex; flex-wrap:wrap; gap:9px; }
+    .portfolio-filter { border:1px solid #552b32; background:#150f12; color:#d5c9cd; border-radius:100px; padding:9px 14px; font:700 14px/1.2 'Rajdhani',Arial,sans-serif; transition:border-color .2s,background .2s, color .2s; }
+    .portfolio-filter span { display:inline-block; margin-left:8px; color:#ae868e; font:700 11px/1 'Oxanium',sans-serif; }
+    .portfolio-filter.is-active,.portfolio-filter:hover,.portfolio-filter:focus-visible { background:#d81b30; color:#fff; border-color:#ff6172; }
+    .portfolio-filter.is-active span,.portfolio-filter:hover span,.portfolio-filter:focus-visible span { color:#ffe2e7; }
+    .portfolio-toolbar-caption { display:flex; align-items:center; gap:9px; color:#aa969a; font:700 12px/1.3 'Oxanium',sans-serif; }
+    .portfolio-live-dot { display:inline-block; width:7px; height:7px; border-radius:50%; background:#ff384a; box-shadow:0 0 10px #f23a4b; }
+    .results-grid--premium { grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; gap:21px; }
+    .portfolio-card { display:flex; flex-direction:column; min-width:0; border-radius:18px; border:1px solid #6c2736; overflow:hidden; background:linear-gradient(160deg,#180a0e,#090809 69%); box-shadow:0 15px 35px #0009; }
+    .portfolio-card[hidden] { display:none!important; }
+    .portfolio-open { color:inherit; display:block; width:100%; min-width:0; padding:0; border:0; background:none; text-align:left; cursor:pointer; }
+    .portfolio-media { position:relative; display:grid; place-items:center; width:100%; overflow:hidden; aspect-ratio:16/10; background:linear-gradient(150deg,#11070c,#070707); isolation:isolate; }
+    .portfolio-media:before { content:''; position:absolute; inset:-25px; z-index:-1; background-image:linear-gradient(#05050670,#05050670),var(--preview); background-size:cover; background-position:center; filter:blur(27px) brightness(.53); }
+    .portfolio-media:after { content:''; position:absolute; inset:0; pointer-events:none; background:linear-gradient(180deg,#0006,transparent 35%,transparent 60%,#0009); }
+    .portfolio-media img { display:block; max-width:100%; height:100%; width:100%; object-fit:contain; transition:transform .3s ease; }
+    .portfolio-open:hover .portfolio-media img,.portfolio-open:focus-visible .portfolio-media img { transform:scale(1.035); }
+    .portfolio-corner { position:absolute; top:16px; left:17px; z-index:2; color:#fff; background:#101013c9; border:1px solid #fff4; border-radius:100px; padding:7px 10px; font:800 10px/1.2 'Oxanium',sans-serif; letter-spacing:.65px; backdrop-filter:blur(6px); }
+    .portfolio-duration { position:absolute; right:14px; bottom:13px; z-index:2; background:#050506d9; border-radius:6px; border:1px solid #fff2; padding:6px 9px; color:#f1f1f1; font:700 12px/1 'Oxanium',sans-serif; }
+    .portfolio-play { position:absolute; z-index:3; width:72px; height:72px; border-radius:50%; border:2px solid #ff9096; background:linear-gradient(145deg,#fc3140,#c60021); display:grid; place-items:center; box-shadow:0 0 0 10px #ff2a332b,0 0 35px #ff111960,0 10px 27px #000a; transition:transform .25s,box-shadow .25s; }
+    .portfolio-play svg { width:28px; height:28px; color:#fff; margin-left:4px; }
+    .portfolio-open:hover .portfolio-play,.portfolio-open:focus-visible .portfolio-play { transform:scale(1.12); box-shadow:0 0 0 13px #ff2a332b,0 0 55px #ff11198c; }
+    .portfolio-content { display:flex; flex-direction:column; padding:22px 24px 18px; }
+    .portfolio-index { font:700 11px/1.2 'Oxanium',sans-serif; color:#f76772; letter-spacing:1.6px; margin-bottom:10px; }
+    .portfolio-title { font:800 clamp(21px,2.4vw,26px)/1.18 'Oxanium',sans-serif; color:#fff; letter-spacing:-.3px; }
+    .portfolio-desc { color:#c3b5bb; font:600 16.5px/1.4 'Rajdhani',sans-serif; margin:9px 0 17px; min-height:44px; }
+    .portfolio-bottom { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; border-top:1px solid #6224347c; padding-top:13px; }
+    .portfolio-chip { color:#ff9ea8; background:#5c1c2a36; border:1px solid #7e3140; border-radius:100px; padding:6px 9px; font:700 10px/1 'Oxanium',sans-serif; letter-spacing:.3px; }
+    .portfolio-watch { color:#fce9eb; font:700 16px/1.1 'Rajdhani',sans-serif; }
+    .portfolio-watch span { color:#ff515f; font-size:20px; margin-left:3px; }
+    .portfolio-order { color:#fa858e; display:flex; justify-content:space-between; align-items:center; margin:auto 23px 0; border-top:1px solid #64212b5c; padding:14px 0 17px; font:700 15px/1.2 'Rajdhani',sans-serif; }
+    .portfolio-order:hover,.portfolio-order:focus-visible { color:#fff; }
+    .portfolio-order span { font-size:19px; }
+    .results--premium .result-note { color:#aba1a4; font-size:15px; margin:27px auto 0; }
+    .portfolio-modal { display:none; position:fixed; inset:0; z-index:1000; align-items:center; justify-content:center; padding:24px 16px; }
+    .portfolio-modal[aria-hidden="false"] { display:flex; }
+    .portfolio-modal-backdrop { position:absolute; inset:0; background:#000e; backdrop-filter:blur(10px); }
+    .portfolio-dialog { position:relative; z-index:1; overflow:hidden; display:flex; flex-direction:column; width:min(100%,950px); max-height:calc(100dvh - 28px); background:#0b090b; border:1px solid #ae3844; border-radius:16px; box-shadow:0 0 50px #bf061841,0 25px 100px #000d; }
+    .portfolio-dialog-top { display:flex; align-items:center; justify-content:space-between; gap:15px; padding:15px 19px; border-bottom:1px solid #ffffff1a; }
+    .portfolio-dialog-kicker { font:800 10px/1.2 'Oxanium',Arial,sans-serif; letter-spacing:1px; color:#f67180; }
+    .portfolio-dialog h2 { font:800 21px/1.22 'Oxanium',Arial,sans-serif; color:white; margin:5px 0 0; }
+    .portfolio-close { flex:none; display:grid; place-items:center; width:40px; height:40px; background:#27141b; border:1px solid #964252; border-radius:10px; color:#fff; font-size:20px; }
+    .portfolio-video-shell { display:grid; place-items:center; min-height:0; flex:1; background:#000; }
+    .portfolio-video-shell video { display:block; height:auto; max-height:min(70dvh,680px); min-height:150px; width:100%; background:#000; object-fit:contain; }
+    .portfolio-dialog-bottom { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 20px; color:#afa2a6; font:600 15px/1.2 'Rajdhani',sans-serif; }
+    .portfolio-modal-order { flex:none; border:1px solid #f44758; color:#fff; background:#be1428; border-radius:30px; padding:10px 17px; font-weight:700; }
+    body.portfolio-player-open { overflow:hidden; }
+    @media(max-width:800px) { .portfolio-toolbar { justify-content:center; } .portfolio-toolbar-caption { width:100%; justify-content:center; } }
+    @media(max-width:620px) { .results-grid--premium { grid-template-columns:1fr; gap:16px; } .portfolio-filter { padding:8px 11px; font-size:13px; } .portfolio-filter span { margin-left:5px; } .portfolio-filters { justify-content:center; gap:7px; } .portfolio-media { aspect-ratio:16/10; } .portfolio-play { width:62px; height:62px; } .portfolio-play svg { width:25px; height:25px; } .portfolio-content { padding:17px 17px 12px; } .portfolio-title { font-size:21px; } .portfolio-desc { min-height:0; } .portfolio-order { margin:0 17px; } .portfolio-corner { font-size:9px; top:11px; left:11px; } .portfolio-dialog { max-height:calc(100dvh - 20px); } .portfolio-dialog-top { padding:10px 12px; } .portfolio-dialog h2 { font-size:16px; } .portfolio-dialog-bottom { padding:12px; flex-wrap:wrap; justify-content:center; text-align:center; } .portfolio-video-shell video { max-height:65dvh; } }
+
+    /* STEP 4 — Updated pricing: red-black premium studio cards */
+    .pricing--premium { background:radial-gradient(ellipse at 50% 0%,#3b0b1385,transparent 62%),linear-gradient(180deg,#060406 0%,#10080a 52%,#040304 100%); }
+    .pricing-lead { max-width:660px; margin:-13px auto 17px; text-align:center; font-size:20px; color:#cfc2c6; line-height:1.5; }
+    .pricing-status { display:flex; justify-content:center; align-items:center; gap:10px; width:fit-content; max-width:100%; margin:0 auto 34px; padding:8px 13px; border:1px solid #754651; border-radius:100px; color:#f5c4cd; background:#230d15; text-align:center; letter-spacing:1.1px; font:700 10px/1.4 'Oxanium',Arial,sans-serif; }
+    .pricing-pulse { display:block; flex:none; width:6px; height:6px; background:#f44e63; border-radius:100%; box-shadow:0 0 13px #ff2c49aa; }
+    .price-grid--premium { align-items:stretch; gap:17px; }
+    .price-card--premium { position:relative; overflow:hidden; min-width:0; display:flex; align-items:stretch; text-align:left; padding:23px 22px 22px; gap:0; border:1px solid #6c2f3a; border-radius:18px; background:linear-gradient(148deg,#1c0e15 0%,#0c090b 62%,#080809 100%); box-shadow:0 12px 30px #000a, inset 0 1px #ffffff08; transition:transform .25s,border-color .25s,box-shadow .25s; }
+    .price-card--premium::before { content:''; position:absolute; inset:0 0 auto 0; height:3px; background:linear-gradient(90deg,#bd243d,#ff4754,transparent); }
+    .price-card--premium:hover { border-color:#f14758; box-shadow:0 20px 40px #000b,0 0 24px #eb274027; transform:translateY(-5px); }
+    .price-card--premium.featured { background:linear-gradient(155deg,#34101a 0%,#140c0f 54%,#090809 100%); border:1px solid #f34c5c; box-shadow:0 0 30px #f5283b22,0 16px 36px #000a; }
+    .price-card--premium .plan-top { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:28px; }
+    .plan-index { color:#fc929f; letter-spacing:1.1px; font:700 10px/1.4 'Oxanium',Arial,sans-serif; }
+    .plan-type { color:#90848a; letter-spacing:1px; font:700 10px/1.4 'Oxanium',Arial,sans-serif; }
+    .plan-recommend { background:#ed2538; border:1px solid #ff6572; border-radius:100px; padding:7px 10px; color:#fff; font:800 9px/1 'Oxanium',Arial,sans-serif; letter-spacing:.35px; }
+    .price-card--premium h3 { font:800 clamp(25px,2.35vw,32px)/1.1 'Oxanium',Arial,sans-serif; margin:17px 0 8px; color:#fff; letter-spacing:.25px; }
+    .price-card--premium .plan-description { margin:0; min-height:54px; color:#c5b8be; font-size:17px; font-weight:500; line-height:1.32; }
+    .plan-price { margin:16px 0 21px; display:flex; flex-wrap:wrap; align-items:baseline; column-gap:7px; row-gap:3px; }
+    .plan-currency { font:800 16px/1.1 'Oxanium',Arial,sans-serif; color:#f7939b; }
+    .plan-price strong { font:800 clamp(34px,3vw,46px)/1.2 'Oxanium',Arial,sans-serif; letter-spacing:-1px; color:#fff; text-shadow:0 0 12px #ff2c4736; }
+    .plan-unit { flex-basis:100%; margin:0; color:#a999a1; text-transform:uppercase; letter-spacing:1.5px; font:700 10px/1.2 'Oxanium',Arial,sans-serif; }
+    .plan-separator { height:1px; width:100%; background:linear-gradient(90deg,#8b2e40,#46252d,transparent); }
+    .plan-specs { width:100%; display:grid; gap:0; padding:12px 0; }
+    .plan-specs div { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:8px 0; border-bottom:1px solid #ffffff0b; }
+    .plan-specs span { color:#b5a4ac; font:600 15px/1.3 'Rajdhani',Arial,sans-serif; }
+    .plan-specs strong { text-align:right; color:#fff; font:700 16px/1.25 'Rajdhani',Arial,sans-serif; }
+    .plan-features { list-style:none; padding:0; margin:3px 0 20px; width:100%; display:grid; gap:8px; }
+    .plan-features li { display:flex; gap:10px; color:#e1d6da; font:600 16px/1.27 'Rajdhani',Arial,sans-serif; }
+    .plan-features li::before { content:'✓'; color:#ff6671; font-weight:800; flex:none; }
+    .plan-button.pill { margin-top:auto; display:flex; justify-content:space-between; width:100%; min-width:0; min-height:48px; font:800 17px/1 'Rajdhani',Arial,sans-serif; padding:12px 17px; }
+    .price-card--premium:not(.featured) .plan-button { background:linear-gradient(180deg,#501e2a,#2b1119); border-color:#a83c4d; box-shadow:none; }
+    .pricing-extra { margin:28px auto 0; padding:22px 25px; display:flex; align-items:center; justify-content:space-between; gap:20px; border:1px solid #6a313d; border-radius:15px; background:linear-gradient(105deg,#210d16,#0c090d); }
+    .pricing-extra-kicker { font:800 10px/1.1 'Oxanium',Arial,sans-serif; letter-spacing:2px; color:#ef707f; }
+    .pricing-extra h3 { margin:6px 0; font:800 22px/1.1 'Oxanium',Arial,sans-serif; }
+    .pricing-extra p { color:#bfb2b8; margin:0; font:500 17px/1.35 'Rajdhani',Arial,sans-serif; }
+    .pricing-extra .pill { flex:none; white-space:nowrap; }
+    .pricing--premium .pricing-note { max-width:800px; font-size:14px; line-height:1.5; color:#cbbcc1; }
+    .pricing-note strong { color:#ffe0e5; }
+    @media(max-width:800px) { .price-grid--premium { max-width:520px; gap:16px; } .pricing-extra { max-width:520px; flex-direction:column; align-items:stretch; text-align:center; } .pricing-extra .pill { align-self:center; } }
+    @media(max-width:620px) { .pricing-lead { font-size:18px; } .pricing-status { font-size:9px; line-height:1.5; letter-spacing:.35px; margin-bottom:26px; } .price-card--premium { padding:21px 19px; } .price-card--premium h3 { font-size:26px; } .price-card--premium .plan-description { min-height:0; } .plan-price { margin-top:14px; } .plan-price strong { font-size:39px; } .pricing-extra { padding:22px 18px; } }
+    @media(prefers-reduced-motion:reduce) { .price-card--premium { transition:none; } }
+
+    /* STEP 5 — WHY RBG EDITX: editorial benefits, real work, no invented testimonials */
+    .why-studio { position:relative; isolation:isolate; overflow:hidden; background:linear-gradient(180deg,#050306f2,#0c0408f7 58%,#050505f7); }
+    .why-studio::before { content:""; position:absolute; pointer-events:none; z-index:-1; inset:-15% -10% auto; height:580px; background:radial-gradient(ellipse at 48% 45%,rgba(196,10,31,.18),transparent 68%); }
+    .why-studio::after { content:""; position:absolute; z-index:-1; left:-40px; right:-40px; top:0; height:1px; background:linear-gradient(90deg,transparent,#ff37437a,transparent); }
+    .why-lead { margin:-12px auto 36px; color:#d0c8ca; max-width:670px; text-align:center; font-size:20px; line-height:1.5; }
+    .why-layout { display:grid; grid-template-columns:minmax(0,.89fr) minmax(0,1.11fr); align-items:stretch; gap:19px; }
+    .why-spotlight { position:relative; isolation:isolate; overflow:hidden; min-height:475px; border-radius:20px; border:1px solid #7a2432; background:linear-gradient(140deg,#17080cf2 1%,#070708 58%,#22060ced); box-shadow:inset 0 0 56px #c5142013,0 18px 45px #000b; padding:25px 25px 22px; display:flex; flex-direction:column; justify-content:space-between; }
+    .why-spotlight-glow { position:absolute; width:430px; height:430px; left:50%; top:47%; transform:translate(-50%,-50%); border-radius:100%; z-index:-1; pointer-events:none; background:radial-gradient(circle,rgba(255,33,55,.17),rgba(118,12,27,.08) 40%,transparent 70%); }
+    .why-spotlight-top { display:flex; align-items:center; gap:9px; font:700 11px/1.4 'Oxanium',Arial,sans-serif; color:#ef929c; letter-spacing:1.25px; }
+    .why-live-dot { width:7px; height:7px; flex:none; border-radius:50%; background:#ff3345; box-shadow:0 0 0 4px #ff33451c,0 0 12px #ff3345; }
+    .why-spotlight-cross { margin-left:auto; color:#ff3d4a; font-size:20px; }
+    .why-spotlight-core { min-height:280px; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+    .why-spotlight-rings { position:absolute; inset:0; display:grid; place-items:center; pointer-events:none; }
+    .why-spotlight-rings span { position:absolute; display:block; width:260px; height:260px; border:1px solid rgba(255,77,93,.13); border-radius:50%; }
+    .why-spotlight-rings span:last-child { width:330px; height:330px; border-color:rgba(255,77,93,.07); }
+    .why-spotlight-logo { font:800 clamp(34px,4.6vw,61px)/1 'Oxanium',Arial,sans-serif; letter-spacing:-2px; white-space:nowrap; position:relative; z-index:1; color:#fff; text-shadow:0 0 24px #ff253947; }
+    .why-spotlight-logo span { color:#ff3647; text-shadow:0 0 10px #ff15258c,0 0 26px #ff152542; }
+    .why-spotlight-core p { position:relative; margin:18px 0 12px; font-size:13px; color:#c4b5bb; letter-spacing:2.2px; font-weight:700; }
+    .why-tiny-rule { width:70px; height:2px; background:#f43345; box-shadow:0 0 12px #f43345; }
+    .why-spotlight-bottom { display:flex; align-items:end; justify-content:space-between; border-top:1px solid #ffffff21; padding-top:18px; gap:14px; }
+    .why-spotlight-bottom > div { display:flex; flex-direction:column; }
+    .why-metric { font:800 33px/1 'Oxanium',Arial,sans-serif; color:#f8f6f6; }
+    .why-metric-label { margin-top:4px; font-size:10px; letter-spacing:1.7px; font-weight:800; color:#dc8792; }
+    .why-watch { flex:none; display:inline-flex; align-items:center; gap:10px; font:800 12px/1.25 'Oxanium',Arial,sans-serif; letter-spacing:.7px; color:#fff; border-bottom:1px solid #fd4655; padding-bottom:7px; }
+    .why-watch:hover { color:#ff8d96; }
+    .why-feature-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+    .why-feature-card { display:flex; flex-direction:column; min-height:224px; border:1px solid #6826309e; border-radius:17px; padding:23px 21px; background:linear-gradient(153deg,rgba(36,16,21,.92),rgba(9,9,11,.96) 70%); box-shadow:0 13px 25px #0004; transition:transform .2s,border-color .2s,background .2s; }
+    .why-feature-card:hover { transform:translateY(-4px); border-color:#f44355bd; background:linear-gradient(153deg,rgba(55,21,28,.98),rgba(9,9,11,.96) 70%); }
+    .why-feature-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:17px; }
+    .why-icon { height:47px; width:47px; display:grid; place-items:center; border-radius:12px; background:#ff2d4023; border:1px solid #ff3b4e55; color:#ff6470; font:800 25px/1 'Oxanium',Arial,sans-serif; }
+    .why-index { font:700 10px 'Oxanium',Arial,sans-serif; letter-spacing:1px; color:#99747c; }
+    .why-feature-card h3 { margin:0 0 9px; font:700 23px/1.14 'Rajdhani',Arial,sans-serif; color:#fff; }
+    .why-feature-card p { margin:0; font-size:17px; line-height:1.45; color:#c7bec0; }
+    .why-process { margin-top:24px; padding:24px 27px; border:1px solid #ffffff23; border-radius:17px; background:linear-gradient(100deg,#0d0b0de8,#180a0ff2); display:grid; align-items:center; grid-template-columns:190px minmax(0,1fr); gap:26px; }
+    .why-process-caption { display:flex; flex-direction:column; gap:9px; }
+    .why-process-caption span { font:800 11px 'Oxanium',Arial,sans-serif; color:#ff5360; letter-spacing:2px; }
+    .why-process-caption strong { font:800 24px/1.1 'Rajdhani',Arial,sans-serif; color:#fff; }
+    .why-steps { display:grid; padding:0; margin:0; grid-template-columns:repeat(3,minmax(0,1fr)); list-style:none; gap:11px; }
+    .why-steps li { display:flex; align-items:flex-start; gap:10px; border-left:1px solid #79232e; padding-left:13px; }
+    .why-step-num { font:800 17px/1.2 'Oxanium',Arial,sans-serif; color:#ff4858; }
+    .why-steps li strong { display:block; font-size:17px; line-height:1.2; color:#fff; }
+    .why-steps li small { display:block; font-size:15px; color:#bcb0b4; line-height:1.25; margin-top:6px; }
+    .why-action-row { display:flex; justify-content:center; align-items:center; gap:22px; margin-top:27px; }
+    .why-action-row p { font-size:20px; color:#d5cbd0; margin:0; }
+    .why-action-row p strong { color:#fff; }
+    .why-main-cta { white-space:nowrap; padding-inline:27px; }
+    @media(max-width:980px) { .why-layout { grid-template-columns:1fr; } .why-spotlight { min-height:370px; } .why-spotlight-core { min-height:225px; } .why-feature-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media(max-width:680px) { .why-lead { font-size:18px; margin-bottom:25px; } .why-spotlight { padding:21px; min-height:370px; } .why-spotlight-logo { font-size:clamp(34px,9vw,49px); } .why-feature-card { min-height:0; } .why-process { grid-template-columns:1fr; gap:20px; padding:21px; } .why-steps { grid-template-columns:1fr; gap:17px; } .why-steps li { border-left:1px solid #79232e; padding-left:12px; } .why-action-row { flex-direction:column; gap:15px; text-align:center; } }
+    @media(max-width:470px) { .why-feature-grid { grid-template-columns:1fr; gap:12px; } .why-feature-card { padding:18px; } .why-feature-card h3 { font-size:22px; } .why-feature-top { margin-bottom:11px; } .why-spotlight-logo { font-size:clamp(32px,8.7vw,43px); } .why-spotlight-rings span { width:205px; height:205px; } .why-spotlight-rings span:last-child { width:275px; height:275px; } .why-watch { font-size:10px; } .why-spotlight-bottom { gap:6px; } .why-metric-label { font-size:8px; letter-spacing:1px; } }
+    @media(prefers-reduced-motion:reduce) { .why-feature-card { transition:none; } }
+
+  
+    /* STEP 6 — Client-first order & verified contact section */
+    #order { scroll-margin-top:85px; }
+    .order--pro { isolation:isolate; background:radial-gradient(circle at 4% 10%,rgba(215,22,49,.13),transparent 38%),radial-gradient(circle at 95% 92%,rgba(170,16,38,.1),transparent 40%),linear-gradient(180deg,#080506,#10090b 51%,#070406); }
+    .order-topline { margin:0 auto 8px; width:max-content; color:#f67680; font:800 11px/1.4 'Oxanium',Arial,sans-serif; letter-spacing:3px; text-align:center; }
+    .order--pro .section-heading { margin-bottom:14px; }
+    .order--pro .order-intro { max-width:720px; margin:0 auto 29px; color:#d4c8cb; font-size:19px; line-height:1.55; }
+    .order-steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); max-width:820px; margin:0 auto 27px; gap:10px; }
+    .order-step { display:flex; gap:10px; align-items:center; min-height:56px; padding:12px; border:1px solid #6c313c; border-radius:12px; background:#140d11; font:700 15px/1.1 'Rajdhani',Arial,sans-serif; }
+    .order-step span { flex:none; display:grid; place-items:center; width:26px; height:26px; border:1px solid #fa3a50; border-radius:7px; color:#ff6879; font:800 12px/1 'Oxanium',Arial,sans-serif; }
+    .order-shell { max-width:1040px; margin:0 auto; display:grid; grid-template-columns:minmax(0,1.5fr) minmax(270px,.85fr); gap:20px; align-items:start; }
+    .order--pro .form-card { margin:0; max-width:none; padding:30px; background:linear-gradient(155deg,#170e12,#09080a); border-color:#7e2a39; box-shadow:0 18px 45px #0009, inset 0 1px #ffffff0e; }
+    .order-form-heading { margin:0 0 17px; display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .order-form-heading strong { font:800 24px/1.2 'Rajdhani',Arial,sans-serif; }
+    .order-form-heading small { color:#fb8c97; font:700 11px/1.2 'Oxanium',Arial,sans-serif; letter-spacing:1px; }
+    .order-form-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:16px; }
+    .order-form-grid .span-2 { grid-column:span 2; }
+    .order--pro .form-field { margin-bottom:17px; }
+    .order--pro .form-field label { color:#eee4e6; font-size:16px; letter-spacing:.2px; margin-bottom:8px; }
+    .field-note { font-size:13px; color:#b9aeb1; margin:5px 0 0; line-height:1.35; }
+    .required-marker { color:#fa6071; }
+    .order--pro .form-card input,.order--pro .form-card select,.order--pro .form-card textarea { border:1px solid #71424b; background:#0f0d10; color:#f5f2f3; border-radius:10px; min-height:49px; padding:12px 13px; font:600 17px/1.3 'Rajdhani',Arial,sans-serif; color-scheme:dark; }
+    .order--pro .form-card input::placeholder,.order--pro .form-card textarea::placeholder { color:#a89fa2; }
+    .order--pro .form-card select option { color:#fff; background:#130d10; }
+    .order--pro .form-card textarea { min-height:130px; resize:vertical; }
+    .order--pro .form-card input:focus,.order--pro .form-card select:focus,.order--pro .form-card textarea:focus { border-color:#ff4057; box-shadow:0 0 0 3px #fc35463b; }
+    .order--pro .form-card :is(input,select,textarea)[aria-invalid='true'] { border-color:#ff8f90; box-shadow:0 0 0 2px #ff3c4844; }
+    .order-form-error { color:#ffb5bd; font-size:15px; font-weight:700; margin:0 0 12px; display:none; }
+    .order-form-error.show { display:block; }
+    .order--pro .submit-button { min-height:55px; font-size:20px; cursor:pointer; }
+    .order--pro .form-tip { font-size:14px; line-height:1.5; color:#baadb1; text-align:left; margin:12px 0 0; }
+    .order-preview { position:sticky; top:90px; padding:26px 23px 24px; border:1px solid #732833; border-radius:15px; background:linear-gradient(160deg,#190a0f,#070708); box-shadow:0 15px 32px #0009; }
+    .order-preview-eyebrow { margin:0 0 11px; color:#f96f7d; font:700 11px/1.3 'Oxanium',Arial,sans-serif; letter-spacing:2px; }
+    .order-preview h3 { margin:0 0 11px; font:800 30px/1.05 'Rajdhani',Arial,sans-serif; }
+    .order-preview-desc { margin:0 0 20px; color:#bfb1b4; font-size:17px; line-height:1.4; }
+    .order-preview dl { margin:0 0 20px; }
+    .order-preview dl>div { border-top:1px solid #ffffff21; padding:13px 0; }
+    .order-preview dt { color:#bd9ea7; font:700 11px/1.3 'Oxanium',Arial,sans-serif; letter-spacing:1px; margin-bottom:5px; text-transform:uppercase; }
+    .order-preview dd { margin:0; color:#f4ebed; font-size:18px; line-height:1.3; overflow-wrap:anywhere; }
+    .order-preview-footer { display:flex; align-items:center; gap:8px; color:#f1a4ad; font-size:14px; line-height:1.4; border-top:1px solid #ffffff21; padding-top:17px; }
+    .order-preview-footer svg { flex:none; width:23px; height:23px; fill:#2dce70; }
+    .contact--pro { padding:90px 0; background:linear-gradient(180deg,#090609,#050405); border-top:1px solid #6f2436; }
+    .contact--pro .section-heading { margin-bottom:12px; }
+    .contact--pro .contact-lead { color:#bfb4b8; max-width:730px; margin:0 auto 30px; font-size:19px; line-height:1.55; text-align:center; }
+    .contact-action { display:flex; align-items:center; justify-content:space-between; gap:20px; border:1px solid #793445; border-radius:17px; padding:26px; background:linear-gradient(120deg,#200d13,#080708); box-shadow:0 15px 30px #0009; margin-bottom:28px; }
+    .contact-kicker { color:#ff6979; font:800 11px/1.3 'Oxanium',Arial,sans-serif; letter-spacing:2px; margin:0 0 9px; }
+    .contact-action h3 { margin:0 0 5px; font:800 29px/1.1 'Rajdhani',Arial,sans-serif; }
+    .contact-action p { text-align:left; margin:0; color:#cabec2; font-size:17px; }
+    .contact-action .pill { flex:none; }
+    .social-grid-pro { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:13px; }
+    .social-grid-pro a { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:19px; border-radius:12px; border:1px solid #4e2732; background:#100b0f; transition:transform .2s ease,border-color .2s ease; min-width:0; }
+    .social-grid-pro a:hover { transform:translateY(-3px); border-color:#fb405b; }
+    .social-grid-pro strong { display:block; font-size:21px; }
+    .social-grid-pro small { display:block; color:#ac9ba2; font-size:14px; overflow-wrap:anywhere; }
+    .social-grid-pro .social-arrow { color:#f17180; font-size:24px; flex:none; }
+    @media(max-width:810px) {
+      .order-shell { grid-template-columns:minmax(0,1fr); max-width:660px; }
+      .order-preview { position:static; }
+    }
+    @media(max-width:620px) {
+      #order { scroll-margin-top:75px; }
+      .order-steps { gap:6px; }
+      .order-step { min-height:62px; gap:5px; display:flex; flex-direction:column; padding:9px 5px; text-align:center; font-size:13px; }
+      .order-step span { width:22px; height:22px; font-size:10px; }
+      .order--pro .order-intro { font-size:17px; }
+      .order--pro .form-card { padding:19px 15px; }
+      .order-form-grid { grid-template-columns:1fr; }
+      .order-form-grid .span-2 { grid-column:span 1; }
+      .order-preview { padding:21px 18px; }
+      .contact--pro { padding:65px 0; }
+      .contact-action { display:block; padding:21px; }
+      .contact-action .pill { width:100%; margin-top:19px; }
+      .social-grid-pro { grid-template-columns:1fr; }
+      .social-grid-pro a { padding:15px 18px; }
+    }
+
+  
+    /* STEP 7 — Accessible FAQs and professional finishing */
+    .skip-link { position:fixed; z-index:500; top:-80px; left:14px; background:#f12339; padding:11px 17px; color:#fff; border-radius:8px; font-weight:800; }
+    .skip-link:focus { top:12px; }
+    :focus-visible { outline:3px solid #ff737d; outline-offset:3px; }
+    .faq--premium { position:relative; isolation:isolate; background:radial-gradient(circle at 10% 15%,rgba(220,30,50,.12),transparent 42%),linear-gradient(180deg,#080506,#10080b 52%,#080506); padding-block:90px 92px; }
+    .faq--premium .section-heading { max-width:980px; font-size:clamp(31px,5.3vw,57px); }
+    .faq-subtitle { margin:-13px auto 39px; max-width:640px; text-align:center; font-size:19px; color:#d1c5c8; }
+    .faq-shell { display:grid; grid-template-columns:minmax(250px,.78fr) minmax(0,1.6fr); gap:25px; align-items:stretch; }
+    .faq-aside { min-width:0; align-self:start; position:relative; background:linear-gradient(155deg,#310c13,#190a0c 65%,#0c090b); border:1px solid #84313d; border-radius:19px; padding:27px 24px 29px; overflow:hidden; box-shadow:0 15px 36px #0007; }
+    .faq-aside::before { position:absolute; content:''; inset:0 0 auto; height:2px; background:linear-gradient(90deg,transparent,#ff4352,transparent); }
+    .faq-aside-mark { color:#ff9da6; letter-spacing:3px; font:700 11px/1.4 'Oxanium',Arial,sans-serif; }
+    .faq-aside-art { text-align:center; margin:3px 0 -10px; font:800 clamp(100px,14vw,166px)/1 'Oxanium',Arial,sans-serif; color:#ff24381d; -webkit-text-stroke:2px #ff63714b; text-shadow:0 0 54px #fd304b40; user-select:none; }
+    .faq-aside h3 { font:800 27px/1.1 'Oxanium',Arial,sans-serif; margin:15px 0 13px; }
+    .faq-aside p { color:#d4c4c8; line-height:1.5; font-size:18px; margin:0 0 24px; }
+    .faq-aside-cta { background:#ef2436; color:#fff; display:flex; align-items:center; justify-content:space-between; border-radius:10px; padding:14px 16px; font:700 18px/1.1 'Rajdhani',Arial,sans-serif; }
+    .faq-aside-chat { display:block; text-align:center; margin-top:18px; color:#ffadb4; font-size:17px; font-weight:700; }
+    .faq-aside-cta:hover,.faq-aside-cta:focus-visible { background:#ff3d4b; }
+    .faq--premium .faq-list { max-width:none; margin:0; gap:12px; align-content:start; }
+    .faq--premium .faq-list details { border:1px solid #70303a; border-radius:12px; background:linear-gradient(120deg,rgba(26,18,20,.97),rgba(13,12,14,.99)); transition:border-color .2s, background .2s; }
+    .faq--premium .faq-list details[open] { border-color:#ef4857; background:linear-gradient(120deg,#261116,#151013); }
+    .faq--premium .faq-list summary { align-items:center; padding:19px 21px; font-size:20px; line-height:1.25; }
+    .faq--premium .faq-list summary::after { flex:none; display:inline-grid; place-items:center; content:'+'; color:#ff6673; font:800 21px/1 'Oxanium',Arial,sans-serif; height:27px; width:27px; border:1px solid #8b3944; border-radius:7px; }
+    .faq--premium .faq-list details[open] summary::after { content:'−'; background:#5c1b26; color:#fff; }
+    .faq--premium .faq-list details p { font-size:18px; line-height:1.5; color:#d8c9cc; padding:0 21px 21px; }
+    .faq--premium .faq-list details p a { color:#ff8e9b; text-decoration:underline; text-underline-offset:3px; }
+    .faq-bottom-note { margin:25px 0 0; text-align:center; color:#baaab0; font-size:17px; }
+    .faq-bottom-note > span { color:#ff5263; }
+    .faq-bottom-note a { color:#ff8e9b; font-weight:700; text-decoration:underline; text-underline-offset:3px; }
+    @media(max-width:800px) { .faq-shell { grid-template-columns:1fr; } .faq-aside { display:grid; grid-template-columns:1fr auto; column-gap:12px; align-items:center; } .faq-aside-mark,.faq-aside h3,.faq-aside p,.faq-aside-cta,.faq-aside-chat { grid-column:1; } .faq-aside-art { grid-column:2; grid-row:1 / 5; font-size:110px; } }
+    @media(max-width:620px) { .faq--premium { padding-block:66px 72px; } .faq-subtitle { font-size:17px; margin-bottom:25px; } .faq-shell { gap:17px; } .faq-aside { display:block; padding:22px; } .faq-aside-art { position:absolute; right:10px; top:30px; font-size:100px; opacity:.55; } .faq-aside h3 { position:relative; font-size:23px; } .faq-aside p { position:relative; font-size:17px; } .faq--premium .faq-list summary { padding:16px; font-size:18px; } .faq--premium .faq-list details p { padding:0 16px 18px; font-size:17px; } .faq-bottom-note { font-size:16px; } }
+    @media(prefers-reduced-motion:reduce) { .faq--premium .faq-list details { transition:none; } }
+
+    /* STEP 8 — mobile safe-area and accessible compact contact */
+    @media (max-width:620px) {
+      .floating-wa { width:54px; height:54px; min-width:54px; padding:0; right:14px; bottom:max(14px,env(safe-area-inset-bottom)); border-radius:50%; justify-content:center; font-size:0; line-height:0; }
+      .floating-wa svg { width:26px; height:26px; flex:none; }
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; }
+    }
+</style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="RBG EDITX Home">RBG EDITX</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false" type="button">☰</button>
+      <nav id="main-nav" class="nav" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#results">After Result</a><a href="#pricing">Pricing</a><a href="#why">Why Us</a>
+      <a href="#faq">FAQ</a><a href="#order" class="nav-cta">Order Now</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="hero hero--finished" id="home" aria-labelledby="hero-title">
+      <div class="hero-light hero-light--one" aria-hidden="true"></div>
+      <div class="hero-light hero-light--two" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <div class="hero-eyebrow"><span class="hero-signal" aria-hidden="true"></span> PROFESSIONAL EDITING STUDIO</div>
+        <div class="intro-line" aria-hidden="true"></div>
+        <h1 id="hero-title"><span class="hero-word">RBG</span><span class="hero-word hero-word--red">EDITX</span></h1>
+        <div class="hero-strapline">YOUR VISION. OUR CREATIVITY.</div>
+        <p class="hero-description">Professional Video Editing <span aria-hidden="true">•</span> Gaming Montages <span aria-hidden="true">•</span> Cinematic Reels <span aria-hidden="true">•</span> Motion Graphics</p>
+        <div class="hero-actions hero-actions--primary">
+          <a class="pill hero-primary" href="#results"><span aria-hidden="true">▶</span> View After Result</a>
+          <a class="pill outline-pill hero-secondary" href="#order">Start a Project <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-social-label"><span aria-hidden="true"></span> FOLLOW &amp; CONNECT <span aria-hidden="true"></span></div>
+        <div class="social-links hero-socials" aria-label="Social media links">
+          <a href="https://wa.me/923149259649" target="_blank" rel="noopener noreferrer" class="pill" data-whatsapp>WhatsApp</a>
+          <a href="https://www.tiktok.com/@trondoflexx" target="_blank" rel="noopener noreferrer" class="pill" data-social="tiktok">TikTok</a>
+          <a href="https://youtube.com/@trendoflexx" target="_blank" rel="noopener noreferrer" class="pill" data-social="youtube">YouTube</a>
+          <a href="https://www.facebook.com/profile.php?id=61589310357498" target="_blank" rel="noopener noreferrer" class="pill" data-social="facebook">Facebook</a>
+        </div>
+        <a class="hero-scroll" href="#services" aria-label="Scroll to services"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a>
+      </div>
+    </section>
+    <div class="ticker">Professional Video Editing &amp; Creative Designs</div>
+    <!-- Step 2 review: premium Our Services cards. -->
+    <section class="section services services--pro" id="services">
+      <div class="container">
+        <p class="section-label">What We Create</p>
+        <h2 class="section-heading">Our Services</h2>
+        <p class="section-description services-intro">From fast-cut gaming highlights to cinematic promos and social media graphics — explore what RBG EDITX can create for your project.</p>
+        <div class="service-grid service-grid--pro">
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m8 10 3 2-3 2z"/><path d="M14 8v8"/></svg></span><span class="service-index">01 / 06</span></div>
+            <h3>Video Editing</h3>
+            <p>Reels, Shorts & YouTube videos with clean cuts, captions, transitions and a cinematic finish.</p>
+            <div class="service-tagline">REELS • SHORTS • YOUTUBE</div>
+            <a class="service-action" href="#order" data-service="Professional Video Editing" aria-label="Order Video Editing">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.5 9h9a4.5 4.5 0 0 1 4.4 3.5l1 4c.5 2.2-1.4 3.5-3 2.2L16.5 17h-9l-2.4 1.7c-1.6 1.3-3.5 0-3-2.2l1-4A4.5 4.5 0 0 1 7.5 9Z"/><path d="M7 11v4M5 13h4M16 12h.01M18 14h.01"/></svg></span><span class="service-index">02 / 06</span></div>
+            <h3>Gaming Montages</h3>
+            <p>Beat-synced highlights, energetic transitions and impact effects for gaming content.</p>
+            <div class="service-tagline">GAMING • VFX • BEAT SYNC</div>
+            <a class="service-action" href="#order" data-service="Gaming Montage Editing" aria-label="Order Gaming Montages">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h7M17 7h3M4 17h3M13 17h7"/><circle cx="14" cy="7" r="3"/><circle cx="10" cy="17" r="3"/></svg></span><span class="service-index">03 / 06</span></div>
+            <h3>Alight Motion CC + XML</h3>
+            <p>Color correction, grading, XML-style effects and polished reel transitions.</p>
+            <div class="service-tagline">CC • XML • TRANSITIONS</div>
+            <a class="service-action" href="#order" data-service="Alight Motion CC + XML" aria-label="Order Alight Motion CC + XML">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18M12 6v13M8 19h8M4 6v4M20 6v4"/></svg></span><span class="service-index">04 / 06</span></div>
+            <h3>Typography & Motion</h3>
+            <p>Eye-catching animated text, dynamic titles and kinetic typography for your videos.</p>
+            <div class="service-tagline">KINETIC TYPE • MOTION</div>
+            <a class="service-action" href="#order" data-service="Typography & Motion Graphics" aria-label="Order Typography & Motion">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11v3c0 1 1 2 2 2h3l2 5h3l-2-5 8-4V6L7 10H5c-1 0-2 1-2 1z"/><path d="M21 8v6"/></svg></span><span class="service-index">05 / 06</span></div>
+            <h3>Brand Promotional Videos</h3>
+            <p>Product showcases, promotional reels and creative videos made to present your brand.</p>
+            <div class="service-tagline">BRANDS • PRODUCTS • PROMOS</div>
+            <a class="service-action" href="#order" data-service="Promotional Video Editing" aria-label="Order Brand Promotional Videos">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="service-item service-item--pro">
+            <div class="service-card-top"><span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 5-5 4 3 4-5 5 6"/></svg></span><span class="service-index">06 / 06</span></div>
+            <h3>Graphic Design</h3>
+            <p>High-impact thumbnails, logos, banners and social media visuals with a consistent look.</p>
+            <div class="service-tagline">THUMBNAILS • LOGOS • BANNERS</div>
+            <a class="service-action" href="#order" data-service="Graphic Design" aria-label="Order Graphic Design">Request This Service <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <div class="services-bottom"><span>HAVE SOMETHING DIFFERENT IN MIND?</span><a href="#order">Tell Us About Your Project <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <!-- Step 3: real video portfolio, no Before/After comparison. -->
+    <section class="section results results--premium" id="results" aria-labelledby="results-heading">
+      <div class="container">
+        <p class="section-label">Real Projects · Finished Edits</p>
+        <h2 class="section-heading" id="results-heading">After Result</h2>
+        <p class="section-description results-intro">See what RBG EDITX creates. Every preview below is from an actual finished video — tap a project to watch it with sound.</p>
+        <div class="portfolio-toolbar">
+          <div class="portfolio-filters" role="group" aria-label="Filter video projects">
+<button class="portfolio-filter is-active" type="button" data-filter="all" aria-pressed="true">All Work<span>04</span></button>
+<button class="portfolio-filter" type="button" data-filter="typography" aria-pressed="false">Typography<span>01</span></button>
+<button class="portfolio-filter" type="button" data-filter="gaming" aria-pressed="false">Gaming<span>01</span></button>
+<button class="portfolio-filter" type="button" data-filter="reels" aria-pressed="false">CC + XML<span>01</span></button>
+<button class="portfolio-filter" type="button" data-filter="promo" aria-pressed="false">Promotional<span>01</span></button>
+          </div>
+          <div class="portfolio-toolbar-caption"><span class="portfolio-live-dot" aria-hidden="true"></span><span id="portfolio-count" role="status" aria-live="polite">Showing all 4 projects</span></div>
+        </div>
+        <div class="results-grid results-grid--premium" id="portfolio-grid">
+          <article class="result-card portfolio-card" data-category="typography">
+            <button type="button" class="portfolio-open" data-video="typography.mp4" data-title="Typography Edit" data-poster="typography.jpg" data-service-name="Typography &amp; Motion Graphics" aria-label="Play Typography Edit — 00:23">
+              <span class="portfolio-media portfolio-media--wide" style="--preview:url('typography.jpg')">
+                <img src="typography.jpg" alt="Actual finished typography video preview" loading="lazy" decoding="async" / width="960" height="540">
+                <span class="portfolio-corner">KINETIC TYPOGRAPHY</span>
+                <span class="portfolio-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.7v12.6a1.3 1.3 0 0 0 2.02 1.08l9.38-6.3a1.3 1.3 0 0 0 0-2.16l-9.38-6.3A1.3 1.3 0 0 0 8 5.7Z"/></svg></span>
+                <span class="portfolio-duration" aria-label="Duration 00:23">00:23</span>
+              </span>
+              <span class="portfolio-content">
+                <span class="portfolio-index">PROJECT 01 / 04</span>
+                <span class="portfolio-title">Typography Edit</span>
+                <span class="portfolio-desc">Motion text · dynamic timing · clean visual effects</span>
+                <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
+              </span>
+            </button>
+            <a class="portfolio-order" href="#order" data-service="Typography &amp; Motion Graphics">Request Similar Editing <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="result-card portfolio-card" data-category="gaming">
+            <button type="button" class="portfolio-open" data-video="gaming.mp4" data-title="Gaming Edit" data-poster="gaming.jpg" data-service-name="Gaming Montage Editing" aria-label="Play Gaming Edit — 00:44">
+              <span class="portfolio-media portfolio-media--wide" style="--preview:url('gaming.jpg')">
+                <img src="gaming.jpg" alt="Actual finished gaming montage video preview" loading="lazy" decoding="async" / width="960" height="540">
+                <span class="portfolio-corner">GAMING MONTAGE</span>
+                <span class="portfolio-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.7v12.6a1.3 1.3 0 0 0 2.02 1.08l9.38-6.3a1.3 1.3 0 0 0 0-2.16l-9.38-6.3A1.3 1.3 0 0 0 8 5.7Z"/></svg></span>
+                <span class="portfolio-duration" aria-label="Duration 00:44">00:44</span>
+              </span>
+              <span class="portfolio-content">
+                <span class="portfolio-index">PROJECT 02 / 04</span>
+                <span class="portfolio-title">Gaming Edit</span>
+                <span class="portfolio-desc">Highlight cuts · synced beats · impact effects</span>
+                <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
+              </span>
+            </button>
+            <a class="portfolio-order" href="#order" data-service="Gaming Montage Editing">Request Similar Editing <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="result-card portfolio-card" data-category="reels">
+            <button type="button" class="portfolio-open" data-video="alight-motion-reel.mp4" data-title="Alight Motion — CC + XML" data-poster="alight-motion-reel.jpg" data-service-name="Alight Motion CC + XML" aria-label="Play Alight Motion — CC + XML — 00:34">
+              <span class="portfolio-media portfolio-media--square" style="--preview:url('alight-motion-reel.jpg')">
+                <img src="alight-motion-reel.jpg" alt="Actual Alight Motion color graded reel preview" loading="lazy" decoding="async" / width="960" height="960">
+                <span class="portfolio-corner">CC + XML REEL</span>
+                <span class="portfolio-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.7v12.6a1.3 1.3 0 0 0 2.02 1.08l9.38-6.3a1.3 1.3 0 0 0 0-2.16l-9.38-6.3A1.3 1.3 0 0 0 8 5.7Z"/></svg></span>
+                <span class="portfolio-duration" aria-label="Duration 00:34">00:34</span>
+              </span>
+              <span class="portfolio-content">
+                <span class="portfolio-index">PROJECT 03 / 04</span>
+                <span class="portfolio-title">Alight Motion — CC + XML</span>
+                <span class="portfolio-desc">Cinematic color grading · XML effects · smooth flow</span>
+                <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
+              </span>
+            </button>
+            <a class="portfolio-order" href="#order" data-service="Alight Motion CC + XML">Request Similar Editing <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="result-card portfolio-card" data-category="promo">
+            <button type="button" class="portfolio-open" data-video="promotional.mp4" data-title="Brand Promotional Edit" data-poster="promotional.jpg" data-service-name="Promotional Video Editing" aria-label="Play Brand Promotional Edit — 00:45">
+              <span class="portfolio-media portfolio-media--vertical" style="--preview:url('promotional.jpg')">
+                <img src="promotional.jpg" alt="Actual promotional brand video preview" loading="lazy" decoding="async" / width="960" height="1706">
+                <span class="portfolio-corner">PROMOTIONAL VIDEO</span>
+                <span class="portfolio-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.7v12.6a1.3 1.3 0 0 0 2.02 1.08l9.38-6.3a1.3 1.3 0 0 0 0-2.16l-9.38-6.3A1.3 1.3 0 0 0 8 5.7Z"/></svg></span>
+                <span class="portfolio-duration" aria-label="Duration 00:45">00:45</span>
+              </span>
+              <span class="portfolio-content">
+                <span class="portfolio-index">PROJECT 04 / 04</span>
+                <span class="portfolio-title">Brand Promotional Edit</span>
+                <span class="portfolio-desc">Product showcase · creative advertising · polished edit</span>
+                <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
+              </span>
+            </button>
+            <a class="portfolio-order" href="#order" data-service="Promotional Video Editing">Request Similar Editing <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="result-note">Original aspect ratios preserved. Videos load only when you choose to play them — helpful for mobile data.</p>
+        <div class="showreel-cta"><a href="https://youtube.com/@trendoflexx?si=yayRo4u6DzINvPHl" target="_blank" rel="noopener noreferrer" class="pill outline-pill">More Videos on YouTube ↗</a><a href="#order" class="pill">Start Your Project →</a></div>
+      </div>
+    </section>
+
+    <!-- STEP 4: Premium pricing cards — updated prices and delivery. -->
+    <section class="section pricing pricing--premium" id="pricing" aria-labelledby="pricing-title">
+      <div class="container">
+        <p class="section-label">CREATIVE PACKAGES</p>
+        <h2 class="section-heading" id="pricing-title">Pricing Plans</h2>
+        <p class="pricing-lead">From quick edits to cinematic productions. Choose a starting point, then tell us what you want to create.</p>
+        <div class="pricing-status"><span class="pricing-pulse" aria-hidden="true"></span> UPDATED PRICES &amp; DELIVERY TIMES</div>
+        <div class="price-grid price-grid--premium">
+          <article class="price-card price-card--premium" aria-labelledby="basic-plan-title">
+            <div class="plan-top"><span class="plan-index">01 / STARTER</span><span class="plan-type">ESSENTIAL</span></div>
+            <h3 id="basic-plan-title">Basic Edit</h3>
+            <p class="plan-description">Clean, polished editing for a short clip.</p>
+            <div class="plan-price"><span class="plan-currency">PKR</span><strong>500</strong><span class="plan-unit">starting at</span></div>
+            <div class="plan-separator"></div>
+            <div class="plan-specs" aria-label="Basic proposed package limits">
+              <div><span>↗ Video length</span><strong>Up to 20 sec</strong></div>
+              <div><span>↻ Revisions</span><strong>1 round</strong></div>
+              <div><span>◷ Delivery</span><strong>6 hours</strong></div>
+            </div>
+            <ul class="plan-features">
+              <li>Clean cuts &amp; timing</li>
+              <li>Simple titles &amp; transitions</li>
+              <li>Basic sound sync</li>
+              <li>Export-ready MP4</li>
+            </ul>
+            <button type="button" class="pill plan-button" data-package="Basic Edit - Rs. 500" aria-label="Select Basic Edit package">Choose Basic <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="price-card price-card--premium featured" aria-labelledby="pro-plan-title">
+            <div class="plan-top"><span class="plan-index">02 / CREATOR</span><span class="plan-recommend">RECOMMENDED</span></div>
+            <h3 id="pro-plan-title">Pro Edit</h3>
+            <p class="plan-description">Energy, rhythm &amp; smooth effects for your content.</p>
+            <div class="plan-price"><span class="plan-currency">PKR</span><strong>1,000</strong><span class="plan-unit">starting at</span></div>
+            <div class="plan-separator"></div>
+            <div class="plan-specs" aria-label="Pro proposed package limits">
+              <div><span>↗ Video length</span><strong>Up to 45 sec</strong></div>
+              <div><span>↻ Revisions</span><strong>2 rounds</strong></div>
+              <div><span>◷ Delivery</span><strong>12 hours</strong></div>
+            </div>
+            <ul class="plan-features">
+              <li>Gaming montages &amp; reels</li>
+              <li>Creative transitions &amp; beat sync</li>
+              <li>Color correction &amp; effects</li>
+              <li>HD export-ready MP4</li>
+            </ul>
+            <button type="button" class="pill plan-button" data-package="Pro Edit - Rs. 1000" aria-label="Select Pro Edit package">Choose Pro <span aria-hidden="true">↗</span></button>
+          </article>
+          <article class="price-card price-card--premium" aria-labelledby="premium-plan-title">
+            <div class="plan-top"><span class="plan-index">03 / SIGNATURE</span><span class="plan-type">ADVANCED</span></div>
+            <h3 id="premium-plan-title">Premium Edit</h3>
+            <p class="plan-description">High-impact creative production for your brand.</p>
+            <div class="plan-price"><span class="plan-currency">PKR</span><strong>1,500</strong><span class="plan-unit">starting at</span></div>
+            <div class="plan-separator"></div>
+            <div class="plan-specs" aria-label="Premium proposed package limits">
+              <div><span>↗ Video length</span><strong>Up to 60 sec</strong></div>
+              <div><span>↻ Revisions</span><strong>3 rounds</strong></div>
+              <div><span>◷ Delivery</span><strong>Within 1 day</strong></div>
+            </div>
+            <ul class="plan-features">
+              <li>Cinematic editing &amp; color grade</li>
+              <li>Typography &amp; motion graphics</li>
+              <li>Advanced transitions &amp; sound design</li>
+              <li>Brand promo final export</li>
+            </ul>
+            <button type="button" class="pill plan-button" data-package="Premium Edit - Rs. 1500" aria-label="Select Premium Edit package">Choose Premium <span aria-hidden="true">↗</span></button>
+          </article>
+        </div>
+        <div class="pricing-extra">
+          <div class="pricing-extra-copy">
+            <span class="pricing-extra-kicker">YOUR IDEA, YOUR STYLE</span>
+            <h3>Need a custom edit?</h3>
+            <p>Long-form videos, bulk orders, multi-format campaigns or special effects? Share your brief and ask for a custom quote.</p>
+          </div>
+          <a class="pill outline-pill" href="#order">Get Custom Quote <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="pricing-note">Prices and turnaround times have been updated by RBG EDITX. Video length and revision inclusions are proposed package guidelines. Confirm your exact project scope and start time on WhatsApp before ordering.</p>
+      </div>
+    </section>
+    <section class="section reviews why-studio" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <p class="section-label">THE CREATIVE DIFFERENCE</p>
+        <h2 class="section-heading" id="why-title">Why RBG EDITX</h2>
+        <p class="why-lead">Every edit has a purpose. Explore our work, choose your direction and discuss the details directly with the editor.</p>
+
+        <div class="why-layout">
+          <div class="why-spotlight">
+            <div class="why-spotlight-glow" aria-hidden="true"></div>
+            <div class="why-spotlight-top"><span class="why-live-dot" aria-hidden="true"></span> RBG EDITX / CREATIVE STUDIO <span class="why-spotlight-cross" aria-hidden="true">✦</span></div>
+            <div class="why-spotlight-core">
+              <div class="why-spotlight-rings" aria-hidden="true"><span></span><span></span></div>
+              <strong class="why-spotlight-logo">RBG <span>EDITX</span></strong>
+              <p>YOUR VISION. OUR CREATIVITY.</p>
+              <div class="why-tiny-rule" aria-hidden="true"></div>
+            </div>
+            <div class="why-spotlight-bottom">
+              <div><span class="why-metric">04</span><span class="why-metric-label">REAL EDITS ON DISPLAY</span></div>
+              <a class="why-watch" href="#results">VIEW OUR RESULTS <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+
+          <div class="why-feature-grid">
+            <article class="why-feature-card">
+              <div class="why-feature-top"><span class="why-icon" aria-hidden="true">✦</span><span class="why-index">01 / CRAFT</span></div>
+              <h3>Edits With Creative Detail</h3>
+              <p>Thoughtful cuts, timing, typography and color work that fit the mood of your video.</p>
+            </article>
+            <article class="why-feature-card">
+              <div class="why-feature-top"><span class="why-icon" aria-hidden="true">▶</span><span class="why-index">02 / PROOF</span></div>
+              <h3>Real Editing Samples</h3>
+              <p>Watch four finished projects in After Result—not stock showcases or invented reviews.</p>
+            </article>
+            <article class="why-feature-card">
+              <div class="why-feature-top"><span class="why-icon" aria-hidden="true">◎</span><span class="why-index">03 / CHOICE</span></div>
+              <h3>Style That Fits Your Content</h3>
+              <p>Gaming montages, cinematic reels, motion typography or a brand promo—tell us your goal.</p>
+            </article>
+            <article class="why-feature-card">
+              <div class="why-feature-top"><span class="why-icon" aria-hidden="true">↗</span><span class="why-index">04 / CONTACT</span></div>
+              <h3>Direct WhatsApp Discussion</h3>
+              <p>Share your brief and agree on the project scope, revisions, cost and timeline before work starts.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="why-process" aria-label="How to get started">
+          <div class="why-process-caption"><span>THE PROCESS</span><strong>Simple from the start.</strong></div>
+          <ol class="why-steps">
+            <li><span class="why-step-num">01</span><span><strong>Tell us your idea</strong><small>Choose a service &amp; send your brief.</small></span></li>
+            <li><span class="why-step-num">02</span><span><strong>Discuss the details</strong><small>Confirm price, timeline &amp; revisions.</small></span></li>
+            <li><span class="why-step-num">03</span><span><strong>Get your final edit</strong><small>Receive the agreed finished project.</small></span></li>
+          </ol>
+        </div>
+        <div class="why-action-row">
+          <p>Have a project in mind? <strong>Let's make it stand out.</strong></p>
+          <a class="pill why-main-cta" href="#order">Start a Project <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq faq--premium" id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <p class="section-label">GET THE ANSWERS</p>
+    <h2 class="section-heading" id="faq-title">Frequently Asked Questions</h2>
+    <p class="section-description faq-subtitle">Everything you need to know before requesting a video edit or creative project.</p>
+    <div class="faq-shell">
+      <aside class="faq-aside">
+        <span class="faq-aside-mark">RBG / HELP DESK</span>
+        <div class="faq-aside-art" aria-hidden="true">?</div>
+        <h3>Still have a question?</h3>
+        <p>Every project is different. Message us with your video idea, reference, or deadline.</p>
+        <a href="#order" class="faq-aside-cta">Start a Project <span aria-hidden="true">↗</span></a>
+        <a class="faq-aside-chat" href="https://wa.me/923149259649?text=Hello%20RBG%20EDITX!%20I%20have%20a%20question%20about%20video%20editing." target="_blank" rel="noopener noreferrer">Ask on WhatsApp ↗</a>
+      </aside>
+      <div class="faq-list" aria-label="Common client questions">
+        <details open>
+          <summary>How do I place an order?</summary>
+          <p>Choose a service or package, fill in the <a href="#order">project form</a>, and tap <strong>Continue to WhatsApp</strong>. Your details will be prepared in a WhatsApp message. Check it and press Send to contact us.</p>
+        </details>
+        <details>
+          <summary>Are the displayed prices final?</summary>
+          <p>Our listed package rates are Basic <strong>Rs. 500</strong>, Pro <strong>Rs. 1,000</strong> and Premium <strong>Rs. 1,500</strong>. For longer or more complex edits, request a custom quote before work begins.</p>
+        </details>
+        <details>
+          <summary>How long does delivery take?</summary>
+          <p>Our package delivery targets are <strong>Basic: 6 hours</strong>, <strong>Pro: 12 hours</strong> and <strong>Premium: within 1 day</strong>. Confirm the exact start time and deadline over WhatsApp before work begins.</p>
+        </details>
+        <details>
+          <summary>Can I request revisions?</summary>
+          <p>Yes. Tell us what changes you may need before placing an order. The number of included revisions and any additional charges will be agreed for your specific project.</p>
+        </details>
+        <details>
+          <summary>Can you edit vertical Reels, Shorts and TikToks?</summary>
+          <p>Yes. You can request a vertical <strong>9:16</strong> video, a square <strong>1:1</strong> video or a horizontal <strong>16:9</strong> video. Mention the intended platform and dimensions in your brief.</p>
+        </details>
+        <details>
+          <summary>Can you make Alight Motion CC + XML reels?</summary>
+          <p>Yes. Explore the <a href="#results">After Result gallery</a> to see a finished Alight Motion reel featuring color grading and effects. Share a reference if you have a specific style in mind.</p>
+        </details>
+        <details>
+          <summary>How do I share my raw clips or references?</summary>
+          <p>Paste a reference URL in the order form if you have one. Once you connect on WhatsApp, we can agree on a suitable method for sharing your raw footage. The website form itself does not upload video files.</p>
+        </details>
+        <details>
+          <summary>What are the payment methods?</summary>
+          <p>Payment method and schedule are confirmed directly on WhatsApp before work starts. This website does not collect payments or card details.</p>
+        </details>
+      </div>
+    </div>
+    <div class="faq-bottom-note"><span aria-hidden="true">✦</span> Need something more specific? <a href="#order">Send your project brief →</a></div>
+  </div>
+</section>
+
+    <section class="section order order--pro" id="order">
+      <div class="container">
+        <p class="order-topline">LET'S CREATE SOMETHING GREAT</p>
+        <h2 class="section-heading">Start Your Project</h2>
+        <p class="order-intro">Choose your edit, describe your idea, and continue the conversation on WhatsApp. No account or payment needed to request a quote.</p>
+        <div class="order-steps" aria-label="How to send your project enquiry">
+          <div class="order-step"><span>01</span>Fill your brief</div>
+          <div class="order-step"><span>02</span>Review details</div>
+          <div class="order-step"><span>03</span>Open WhatsApp</div>
+        </div>
+        <div class="order-shell">
+          <form class="form-card" id="order-form">
+            <div class="order-form-heading"><strong>Project Enquiry</strong><small>* REQUIRED</small></div>
+            <div class="order-form-grid">
+              <div class="form-field">
+                <label for="customer-name">Your Name <span class="required-marker">*</span></label>
+                <input id="customer-name" name="customer-name" type="text" autocomplete="name" placeholder="Your name" minlength="2" maxlength="80" required />
+              </div>
+              <div class="form-field">
+                <label for="customer-phone">Your WhatsApp <span class="required-marker">*</span></label>
+                <input id="customer-phone" name="customer-phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="03xxxxxxxxx or +92..." maxlength="25" required />
+                <p class="field-note">Include country code for international numbers.</p>
+              </div>
+              <div class="form-field">
+                <label for="service-type">Editing Service <span class="required-marker">*</span></label>
+                <select id="service-type" name="service-type" required>
+                  <option value="" selected disabled>Select a service</option>
+                  <option value="Professional Video Editing">Video Editing / Reels &amp; Shorts</option>
+                  <option value="Gaming Montage Editing">Gaming Montage</option>
+                  <option value="Alight Motion CC + XML">Alight Motion CC + XML</option>
+                  <option value="Typography &amp; Motion Graphics">Typography &amp; Motion Graphics</option>
+                  <option value="Promotional Video Editing">Promotional Video</option>
+                  <option value="Graphic Design">Graphic Design</option>
+                  <option value="Thumbnail Design">Thumbnail Design</option>
+                  <option value="Logo Design">Logo Design</option>
+                  <option value="Banner Design">Banner Design</option>
+                  <option value="Other Project">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="package-type">Select Package <span class="field-note">(optional)</span></label>
+                <select id="package-type" name="package-type">
+                  <option value="Custom quote / discuss" selected>Custom Quote / Discuss</option>
+                  <option value="Basic Edit - Rs. 500">Basic — Rs. 500 • 6 hours</option>
+                  <option value="Pro Edit - Rs. 1000">Pro — Rs. 1,000 • 12 hours</option>
+                  <option value="Premium Edit - Rs. 1500">Premium — Rs. 1,500 • Within 1 day</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="video-duration">Video Duration <span class="field-note">(optional)</span></label>
+                <select id="video-duration" name="video-duration">
+                  <option value="To be discussed" selected>Select duration</option>
+                  <option value="Under 15 seconds">Under 15 seconds</option>
+                  <option value="15–30 seconds">15–30 seconds</option>
+                  <option value="30–60 seconds">30–60 seconds</option>
+                  <option value="1–3 minutes">1–3 minutes</option>
+                  <option value="Over 3 minutes">Over 3 minutes</option>
+                  <option value="Not applicable (design)">Not applicable / Design</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="project-deadline">Preferred Delivery <span class="field-note">(optional)</span></label>
+                <select id="project-deadline" name="project-deadline">
+                  <option value="Flexible" selected>Flexible</option>
+                  <option value="As soon as available">As soon as available</option>
+                  <option value="Within 6 hours">Within 6 hours</option>
+                  <option value="Within 12 hours">Within 12 hours</option>
+                  <option value="Within 1 day">Within 1 day</option>
+                  <option value="Within 3 days">Within 3 days</option>
+                  <option value="Within 1 week">Within 1 week</option>
+                  <option value="Discuss on WhatsApp">Discuss on WhatsApp</option>
+                </select>
+              </div>
+              <div class="form-field span-2">
+                <label for="reference-link">Reference Link <span class="field-note">(optional)</span></label>
+                <input id="reference-link" name="reference-link" type="url" inputmode="url" placeholder="https://... (example style / reference video)" maxlength="500" />
+                <p class="field-note">Optional inspiration or footage link. No video is uploaded through this form.</p>
+              </div>
+              <div class="form-field span-2">
+                <label for="project-details">Project Details <span class="required-marker">*</span></label>
+                <textarea id="project-details" name="project-details" placeholder="What do you want edited? Share your style, effects, and any special instructions..." minlength="10" maxlength="2500" required></textarea>
+              </div>
+            </div>
+            <p id="order-form-error" class="order-form-error" role="alert"></p>
+            <button class="submit-button" type="submit">Continue to WhatsApp ↗</button>
+            <p class="form-tip">WhatsApp opens with your details filled in. Check the message and press <strong>Send</strong> yourself. This website does not store form submissions. Confirm the exact project scope and delivery start time before work begins.</p>
+          </form>
+          <aside class="order-preview" aria-label="Live project summary">
+            <p class="order-preview-eyebrow">RBG EDITX / PROJECT BRIEF</p>
+            <h3>Your project, your style.</h3>
+            <p class="order-preview-desc">A quick summary updates as you choose your options.</p>
+            <dl>
+              <div><dt>Service</dt><dd id="preview-service">Choose a service</dd></div>
+              <div><dt>Package</dt><dd id="preview-package">Custom Quote / Discuss</dd></div>
+              <div><dt>Duration</dt><dd id="preview-duration">To be discussed</dd></div>
+              <div><dt>Delivery</dt><dd id="preview-deadline">Flexible</dd></div>
+            </dl>
+            <div class="order-preview-footer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.4.1 12c0 2.1.5 4.1 1.6 5.9L0 24l6.2-1.6c1.8.9 3.8 1.4 5.8 1.4 6.6 0 12-5.3 12-11.9 0-3.2-1.2-6.2-3.5-8.4Zm-8.5 18.3c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7 1 1-3.7-.2-.4A9.8 9.8 0 0 1 2.1 12 9.9 9.9 0 1 1 12 21.8Z"/></svg><span>Direct to <strong>+92 314 9259649</strong><br/>No sign-up required.</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="contact contact--pro" id="contact">
+      <div class="container">
+        <p class="section-label">LET'S CONNECT</p>
+        <h2 class="section-heading">Contact RBG EDITX</h2>
+        <p class="contact-lead">Questions about your edit, pricing or a custom project? Message us directly or explore our latest work on social media.</p>
+        <div class="contact-action">
+          <div>
+            <p class="contact-kicker">DIRECT PROJECT ENQUIRIES</p>
+            <h3>Let's bring your vision to life.</h3>
+            <p>WhatsApp: +92 314 9259649</p>
+          </div>
+          <a class="pill" href="https://wa.me/923149259649?text=Hello%20RBG%20EDITX!%20I%20want%20to%20discuss%20a%20project." target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
+        </div>
+        <div class="social-grid-pro" aria-label="RBG EDITX social profiles">
+          <a href="https://www.tiktok.com/@trondoflexx" target="_blank" rel="noopener noreferrer"><span><strong>TikTok</strong><small>@trondoflexx</small></span><span class="social-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://youtube.com/@trendoflexx" target="_blank" rel="noopener noreferrer"><span><strong>YouTube</strong><small>@trendoflexx</small></span><span class="social-arrow" aria-hidden="true">↗</span></a>
+          <a href="https://www.facebook.com/profile.php?id=61589310357498" target="_blank" rel="noopener noreferrer"><span><strong>Facebook</strong><small>RBG EDITX profile</small></span><span class="social-arrow" aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Shared accessible player opens only the video selected by a visitor. -->
+  <div class="portfolio-modal" id="portfolio-modal" aria-hidden="true">
+    <div class="portfolio-modal-backdrop" data-close-player></div>
+    <div class="portfolio-dialog" role="dialog" aria-modal="true" aria-labelledby="portfolio-player-title" tabindex="-1">
+      <div class="portfolio-dialog-top">
+        <div><span class="portfolio-dialog-kicker">RBG EDITX / AFTER RESULT</span><h2 id="portfolio-player-title">Portfolio Video</h2></div>
+        <button class="portfolio-close" type="button" data-close-player aria-label="Close video player">✕</button>
+      </div>
+      <div class="portfolio-video-shell"><video id="portfolio-video" controls playsinline preload="none" aria-label="Portfolio video player"></video></div>
+      <div class="portfolio-dialog-bottom"><span>Original edit • sound enabled in the player</span><a href="#order" id="portfolio-modal-order" class="portfolio-modal-order" data-service="Other Project">Order this style ↗</a></div>
+    </div>
+  </div>
+  <footer class="footer"><div class="container"><a class="brand" href="#home">RBG EDITX</a><p>Professional Video Editing • Motion Graphics • Gaming Content</p><small>© <span id="current-year">2026</span> RBG EDITX. All Rights Reserved.</small></div></footer>
+  <button class="floating-wa" type="button" data-whatsapp aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .14 5.35.13 11.94c0 2.11.55 4.16 1.61 5.97L0 24l6.25-1.64a11.96 11.96 0 0 0 5.71 1.45h.01c6.58 0 11.94-5.35 11.95-11.94a11.87 11.87 0 0 0-3.4-8.39Zm-8.55 18.3a9.9 9.9 0 0 1-5.06-1.39l-.36-.22-3.77.99 1.01-3.68-.24-.38a9.91 9.91 0 0 1-1.51-5.17c0-5.47 4.45-9.91 9.94-9.91a9.87 9.87 0 0 1 7.02 2.91 9.89 9.89 0 0 1 2.88 7.03c0 5.47-4.45 9.92-9.91 9.92Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.64.07a8.13 8.13 0 0 1-2.4-1.48 9.01 9.01 0 0 1-1.66-2.07c-.18-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.66-1.59-.91-2.17-.24-.57-.49-.49-.66-.5h-.56c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08a11.36 11.36 0 0 0 4.35 3.85 3.85 0 0 0 2.22.53 3.52 3.52 0 0 0 2.3-1.62c.28-.4.28-.75.2-.82-.07-.07-.27-.2-.57-.35Z"/></svg>WhatsApp</button>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    // EDIT THESE VALUES: your business WhatsApp number and social media profile URLs.
+    // WhatsApp number format: country code + number, digits only (no '+' or leading zero).
+    const CONFIG = {
+      whatsappNumber: '923149259649',
+      tiktok: 'https://www.tiktok.com/@trondoflexx',
+      youtube: 'https://youtube.com/@trendoflexx?si=yayRo4u6DzINvPHl',
+      facebook: 'https://www.facebook.com/profile.php?id=61589310357498'
+    };
+
+    const nav = document.querySelector('#main-nav');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const toast = document.querySelector('#toast');
+    let toastTimeout;
+    function notify(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => toast.classList.remove('show'), 4400);
+    }
+    function openWhatsApp(message) {
+      const number = String(CONFIG.whatsappNumber).replace(/\D/g, '');
+      if (!number) { notify('Please add your business WhatsApp number in CONFIG.'); return; }
+      const url = `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
+      const link = document.createElement('a');
+      link.href = url;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    }
+    menuToggle.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', 'Open menu');
+      menuToggle.textContent = '☰';
+    }));
+    document.querySelectorAll('[data-whatsapp]').forEach(element => element.addEventListener('click', event => {
+      event.preventDefault();
+      openWhatsApp('Hello RBG EDITX! I would like to discuss a project.');
+    }));
+    document.querySelectorAll('[data-social]').forEach(element => element.addEventListener('click', event => {
+      event.preventDefault();
+      const network = element.dataset.social;
+      const url = CONFIG[network];
+      if (url && /^https:\/\//i.test(url)) window.open(url, '_blank', 'noopener,noreferrer');
+      else notify(`${network.charAt(0).toUpperCase() + network.slice(1)} link is not set yet. Add it in CONFIG.`);
+    }));
+    // Step 6 — service and package calls to action share the same smart form.
+    const orderForm = document.querySelector('#order-form');
+    const serviceSelect = document.querySelector('#service-type');
+    const packageSelect = document.querySelector('#package-type');
+    const orderError = document.querySelector('#order-form-error');
+    const packageValues = {
+      'Basic Edit - Rs. 500': 'Basic Edit - Rs. 500',
+      'Pro Edit - Rs. 1000': 'Pro Edit - Rs. 1000',
+      'Premium Edit - Rs. 1500': 'Premium Edit - Rs. 1500'
+    };
+    const defaultServiceForPackage = 'Professional Video Editing';
+    const packageDeadline = {
+      'Basic Edit - Rs. 500': 'Within 6 hours',
+      'Pro Edit - Rs. 1000': 'Within 12 hours',
+      'Premium Edit - Rs. 1500': 'Within 1 day'
+    };
+    function setDeliveryForPackage() {
+      const suggestion = packageDeadline[packageSelect.value];
+      if (suggestion) document.querySelector('#project-deadline').value = suggestion;
+    }
+    packageSelect.addEventListener('change', () => {
+      setDeliveryForPackage();
+      refreshOrderPreview();
+    });
+    function refreshOrderPreview() {
+      const preview = [
+        ['#preview-service',serviceSelect.value || 'Choose a service'],
+        ['#preview-package',packageSelect.options[packageSelect.selectedIndex].text],
+        ['#preview-duration',document.querySelector('#video-duration').value],
+        ['#preview-deadline',document.querySelector('#project-deadline').value]
+      ];
+      preview.forEach(([selector, value]) => document.querySelector(selector).textContent = value);
+    }
+    ['#service-type','#package-type','#video-duration','#project-deadline'].forEach(selector => {
+      document.querySelector(selector).addEventListener('change',refreshOrderPreview);
+    });
+    function moveToOrder() {
+      document.querySelector('#order').scrollIntoView({behavior:'smooth',block:'start'});
+    }
+    document.querySelectorAll('[data-service]').forEach(link => link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const value = link.dataset.service;
+      if ([...serviceSelect.options].some(option => option.value === value)) serviceSelect.value = value;
+      if (packageSelect.value !== 'Custom quote / discuss') packageSelect.value = 'Custom quote / discuss';
+      refreshOrderPreview();
+      moveToOrder();
+    }));
+    document.querySelectorAll('[data-package]').forEach(button => button.addEventListener('click', () => {
+      const packageValue = packageValues[button.dataset.package];
+      if (packageValue) packageSelect.value = packageValue;
+      if (!serviceSelect.value) serviceSelect.value = defaultServiceForPackage;
+      setDeliveryForPackage();
+      refreshOrderPreview();
+      moveToOrder();
+    }));
+    function showOrderError(message,element) {
+      orderError.textContent = message;
+      orderError.classList.add('show');
+      if (element) {
+        element.setAttribute('aria-invalid','true');
+        element.focus({preventScroll:false});
+      }
+    }
+    orderForm.addEventListener('input', () => {
+      orderError.textContent = '';
+      orderError.classList.remove('show');
+      orderForm.querySelectorAll('[aria-invalid=true]').forEach(el => el.removeAttribute('aria-invalid'));
+    });
+    orderForm.addEventListener('change', () => {
+      orderError.textContent = '';
+      orderError.classList.remove('show');
+    });
+    orderForm.addEventListener('submit', event => {
+      event.preventDefault();
+      if (!orderForm.reportValidity()) return;
+      const nameInput=document.querySelector('#customer-name');
+      const phoneInput=document.querySelector('#customer-phone');
+      const detailsInput=document.querySelector('#project-details');
+      const name=nameInput.value.trim();
+      const phone=phoneInput.value.trim();
+      const phoneDigits=phone.replace(/\D/g,'');
+      const details=detailsInput.value.trim();
+      if (name.length<2) return showOrderError('Please enter your name (at least 2 characters).',nameInput);
+      if (phoneDigits.length<10 || phoneDigits.length>15) return showOrderError('Please enter a valid WhatsApp number, including country code if outside Pakistan.',phoneInput);
+      if (details.length<10) return showOrderError('Please describe your project in at least 10 characters.',detailsInput);
+      const msg = [
+        'Hello RBG EDITX! I would like a project quote.',
+        '',
+        '*CLIENT DETAILS*',
+        'Name: '+name,
+        'WhatsApp: '+phone,
+        '',
+        '*PROJECT BRIEF*',
+        'Service: '+(serviceSelect.value || 'Not selected'),
+        'Package: '+packageSelect.value,
+        'Video duration: '+document.querySelector('#video-duration').value,
+        'Preferred delivery: '+document.querySelector('#project-deadline').value,
+        'Reference: '+(document.querySelector('#reference-link').value.trim() || 'Not provided'),
+        '',
+        'Project details:',
+        details,
+        '',
+        'Please confirm the final price and delivery time. Thank you!'
+      ].join('\n');
+      openWhatsApp(msg);
+    });
+    refreshOrderPreview();
+    // Step 3 — filters and a single on-demand portfolio player.
+    const portfolioModal = document.querySelector('#portfolio-modal');
+    const portfolioVideo = document.querySelector('#portfolio-video');
+    const portfolioCloseButton = document.querySelector('.portfolio-close');
+    const portfolioOrderLink = document.querySelector('#portfolio-modal-order');
+    let lastPortfolioTrigger = null;
+    function closePortfolioPlayer() {
+      if (portfolioModal.getAttribute('aria-hidden') === 'true') return;
+      portfolioVideo.pause();
+      portfolioVideo.removeAttribute('src');
+      portfolioVideo.removeAttribute('poster');
+      portfolioVideo.load();
+      portfolioModal.setAttribute('aria-hidden','true');
+      document.body.classList.remove('portfolio-player-open');
+      if (lastPortfolioTrigger && document.contains(lastPortfolioTrigger)) lastPortfolioTrigger.focus();
+    }
+    document.querySelectorAll('.portfolio-open').forEach(button => button.addEventListener('click', () => {
+      lastPortfolioTrigger = button;
+      document.querySelector('#portfolio-player-title').textContent = button.dataset.title;
+      portfolioOrderLink.dataset.service = button.dataset.serviceName;
+      portfolioVideo.poster = button.dataset.poster;
+      portfolioVideo.src = button.dataset.video;
+      portfolioModal.setAttribute('aria-hidden','false');
+      document.body.classList.add('portfolio-player-open');
+      portfolioVideo.load();
+      portfolioCloseButton.focus();
+      const promise = portfolioVideo.play();
+      if (promise && typeof promise.catch === 'function') promise.catch(() => {});
+    }));
+    portfolioModal.querySelectorAll('[data-close-player]').forEach(button => button.addEventListener('click', closePortfolioPlayer));
+    portfolioOrderLink.addEventListener('click',closePortfolioPlayer);
+    document.addEventListener('keydown', event => {
+      if (portfolioModal.getAttribute('aria-hidden') === 'true') return;
+      if (event.key === 'Escape') { event.preventDefault(); closePortfolioPlayer(); }
+      if (event.key === 'Tab') {
+        const elements = [...portfolioModal.querySelectorAll('button,a,video')].filter(el => el.getClientRects().length);
+        if (!elements.length) return;
+        const first = elements[0], last = elements[elements.length-1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+    });
+    document.querySelectorAll('.portfolio-filter').forEach(filter => filter.addEventListener('click', () => {
+      const category = filter.dataset.filter;
+      let visible = 0;
+      document.querySelectorAll('.portfolio-card').forEach(card => {
+        const show = category === 'all' || card.dataset.category === category;
+        card.hidden = !show;
+        if (show) visible++;
+      });
+      document.querySelectorAll('.portfolio-filter').forEach(other => {
+        const active = other === filter;
+        other.classList.toggle('is-active',active);
+        other.setAttribute('aria-pressed',String(active));
+      });
+      document.querySelector('#portfolio-count').textContent = category === 'all' ? 'Showing all 4 projects' : `Showing ${visible} project${visible === 1 ? '' : 's'}`;
+    }));
+    document.querySelector('#current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
