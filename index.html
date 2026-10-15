@@ -11,12 +11,21 @@
   <meta property="og:site_name" content="RBG EDITX" />
   <meta property="og:locale" content="en_PK" />
   <meta property="og:title" content="RBG EDITX | Video Editing, Gaming &amp; Motion Graphics" />
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://rbg-editx-website.vercel.app/og-preview.png" />
+  <meta name="twitter:image:alt" content="RBG EDITX — Professional Video Editing Studio" />
   <meta name="twitter:title" content="RBG EDITX | Professional Video Editing" />
   <meta name="twitter:description" content="Watch four real RBG EDITX projects: gaming montage, cinematic reel, typography and promotional video." />
-  <meta property="og:description" content="Video Editing • Gaming Montages • Alight Motion Reels • Brand Promotions" />
+  <meta property="og:description" content="Watch four real finished video edits. Explore gaming montages, cinematic reels, typography and business promotions." />
+  <meta property="og:url" content="https://rbg-editx-website.vercel.app/" />
+  <meta property="og:image" content="https://rbg-editx-website.vercel.app/og-preview.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RBG EDITX premium video editing studio branding" />
+  <link rel="canonical" href="https://rbg-editx-website.vercel.app/" />
   <title>RBG EDITX | Professional Editing & Creative Designs</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preload" href="typography.jpg" as="image" fetchpriority="high" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -563,6 +572,8 @@
       *,*::before,*::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; }
     }
 </style>
+  <link rel="stylesheet" href="rbg-v3.css" />
+  <script defer src="/_vercel/insights/script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -571,7 +582,7 @@
       <a class="brand" href="#home" aria-label="RBG EDITX Home">RBG EDITX</a>
       <button class="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false" type="button">☰</button>
       <nav id="main-nav" class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a><a href="#services">Services</a><a href="#results">After Result</a><a href="#pricing">Pricing</a><a href="#why">Why Us</a>
+        <a href="#home">Home</a><a href="#services">Services</a><a href="#results">After Result</a><a href="#pricing">Pricing</a><a href="#calculator">Estimate</a><a href="#why">Why Us</a>
       <a href="#faq">FAQ</a><a href="#order" class="nav-cta">Order Now</a>
       </nav>
     </div>
@@ -589,6 +600,7 @@
         <div class="hero-actions hero-actions--primary">
           <a class="pill hero-primary" href="#results"><span aria-hidden="true">▶</span> View After Result</a>
           <a class="pill outline-pill hero-secondary" href="#order">Start a Project <span aria-hidden="true">↗</span></a>
+          <button class="pill hero-reel-trigger portfolio-open" type="button" data-video="typography.mp4" data-title="Featured Typography Showreel" data-poster="typography.jpg" data-service-name="Typography &amp; Motion Graphics" aria-label="Play featured editing showreel">▶ Play Showreel</button>
         </div>
         <div class="hero-social-label"><span aria-hidden="true"></span> FOLLOW &amp; CONNECT <span aria-hidden="true"></span></div>
         <div class="social-links hero-socials" aria-label="Social media links">
@@ -598,6 +610,22 @@
           <a href="https://www.facebook.com/profile.php?id=61589310357498" target="_blank" rel="noopener noreferrer" class="pill" data-social="facebook">Facebook</a>
         </div>
         <a class="hero-scroll" href="#services" aria-label="Scroll to services"><span aria-hidden="true">↓</span> SCROLL TO EXPLORE</a>
+      </div>
+    </section>
+
+    <section class="featured-v3" id="featured" aria-labelledby="featured-v3-title">
+      <div class="container featured-v3-inner">
+        <div class="featured-v3-copy">
+          <span class="v3-eyebrow"><span class="v3-pulse" aria-hidden="true"></span> FEATURED EDIT / RBG EDITX</span>
+          <h2 id="featured-v3-title">EVERY FRAME <span>MATTERS.</span></h2>
+          <p>Watch a finished typography edit created by RBG EDITX. Sharp timing, cinematic motion and deliberate detail—real work, not stock footage.</p>
+          <div class="v3-reel-facts"><span>ORIGINAL PROJECT</span><span>00:23 RUNTIME</span><span>MOTION TYPOGRAPHY</span></div>
+          <a class="v3-text-link" href="#results">Explore all four edits <span aria-hidden="true">↗</span></a>
+        </div>
+        <button class="v3-showreel portfolio-open" type="button" data-video="typography.mp4" data-title="Featured Typography Showreel" data-poster="typography.jpg" data-service-name="Typography &amp; Motion Graphics" aria-label="Play RBG EDITX featured typography video">
+          <img src="typography.jpg" alt="Preview of RBG EDITX's original finished typography edit" width="960" height="540" decoding="async" />
+          <span class="v3-showreel-overlay"><span class="v3-play-icon" aria-hidden="true">▶</span><span><strong>PLAY FEATURED EDIT</strong><small>Real result / 00:23</small></span><span class="v3-reel-arrow" aria-hidden="true">↗</span></span>
+        </button>
       </div>
     </section>
     <div class="ticker">Professional Video Editing &amp; Creative Designs</div>
@@ -687,6 +715,7 @@
                 <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
               </span>
             </button>
+            <details class="v3-project-details"><summary>Project details <span aria-hidden="true">+</span></summary><p>Motion typography, visual rhythm and animated type.</p><div class="v3-project-specs"><span>16:9 Landscape</span><span>Original RBG EDITX edit</span></div></details>
             <a class="portfolio-order" href="#order" data-service="Typography &amp; Motion Graphics">Request Similar Editing <span aria-hidden="true">→</span></a>
           </article>
           <article class="result-card portfolio-card" data-category="gaming">
@@ -704,6 +733,7 @@
                 <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
               </span>
             </button>
+            <details class="v3-project-details"><summary>Project details <span aria-hidden="true">+</span></summary><p>Gaming highlights, beat-synced cuts and impactful transitions.</p><div class="v3-project-specs"><span>16:9 Landscape</span><span>Original RBG EDITX edit</span></div></details>
             <a class="portfolio-order" href="#order" data-service="Gaming Montage Editing">Request Similar Editing <span aria-hidden="true">→</span></a>
           </article>
           <article class="result-card portfolio-card" data-category="reels">
@@ -721,6 +751,7 @@
                 <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
               </span>
             </button>
+            <details class="v3-project-details"><summary>Project details <span aria-hidden="true">+</span></summary><p>Color correction, XML effects and fluid cinematic transitions.</p><div class="v3-project-specs"><span>1:1 Square</span><span>Original RBG EDITX edit</span></div></details>
             <a class="portfolio-order" href="#order" data-service="Alight Motion CC + XML">Request Similar Editing <span aria-hidden="true">→</span></a>
           </article>
           <article class="result-card portfolio-card" data-category="promo">
@@ -738,6 +769,7 @@
                 <span class="portfolio-bottom"><span class="portfolio-chip">✓ FINISHED EDIT</span><span class="portfolio-watch">Watch Result <span aria-hidden="true">↗</span></span></span>
               </span>
             </button>
+            <details class="v3-project-details"><summary>Project details <span aria-hidden="true">+</span></summary><p>Product-focused storytelling and social advertising.</p><div class="v3-project-specs"><span>9:16 Vertical</span><span>Original RBG EDITX edit</span></div></details>
             <a class="portfolio-order" href="#order" data-service="Promotional Video Editing">Request Similar Editing <span aria-hidden="true">→</span></a>
           </article>
         </div>
@@ -746,6 +778,32 @@
       </div>
     </section>
 
+
+    <section class="section v3-estimator" id="calculator" aria-labelledby="estimator-title">
+      <div class="container">
+        <p class="section-label">PLAN YOUR CREATIVE PROJECT</p>
+        <h2 class="section-heading" id="estimator-title">Instant Estimate</h2>
+        <p class="v3-estimate-lead">Find the right starting package. These are the approved base prices—complex requests are quoted individually.</p>
+        <div class="v3-estimate-shell">
+          <form class="v3-estimate-controls" id="estimate-form" aria-label="Quick editing quote calculator">
+            <label for="estimate-service">Editing style</label>
+            <select id="estimate-service" name="estimate-service"><option value="Professional Video Editing">Professional Video Editing</option><option value="Gaming Montage Editing">Gaming Montage</option><option value="Alight Motion CC + XML">Alight Motion CC + XML</option><option value="Typography &amp; Motion Graphics">Typography &amp; Motion Graphics</option><option value="Promotional Video Editing">Promotional Video</option><option value="Graphic Design">Graphic Design (custom quote)</option></select>
+            <label for="estimate-duration">Video duration</label>
+            <select id="estimate-duration" name="estimate-duration"><option value="basic">Up to 20 seconds</option><option value="pro" selected>Up to 45 seconds</option><option value="premium">Up to 60 seconds</option><option value="custom">Over 60 seconds / custom</option></select>
+            <label class="v3-check" for="estimate-advanced"><input id="estimate-advanced" type="checkbox" /> Special effects or additional deliverables</label>
+            <p class="v3-estimate-hint">Special effects and custom requirements need confirmation—no made-up automatic surcharges.</p>
+          </form>
+          <div class="v3-estimate-result" aria-live="polite" aria-atomic="true">
+            <span class="v3-estimate-eyebrow">YOUR STARTING QUOTE</span>
+            <strong id="estimate-price">Rs. 1,000</strong>
+            <span class="v3-estimate-plan" id="estimate-plan">PRO EDIT · UP TO 45 SEC</span>
+            <div class="v3-estimate-stats"><span>Estimated delivery <b id="estimate-delivery">12 hours</b></span><span>Revisions <b id="estimate-revisions">2</b></span></div>
+            <p class="v3-estimate-note" id="estimate-note">Starting price; final price and timing confirmed before work begins.</p>
+            <button class="pill v3-estimate-cta" id="estimate-apply" type="button">Continue with this package →</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- STEP 4: Premium pricing cards — updated prices and delivery. -->
     <section class="section pricing pricing--premium" id="pricing" aria-labelledby="pricing-title">
       <div class="container">
@@ -884,6 +942,20 @@
       </div>
     </section>
 
+
+    <section class="section v3-trust" id="trust" aria-labelledby="v3-trust-title">
+      <div class="container">
+        <p class="section-label">REAL WORK. CLEAR PROCESS.</p>
+        <h2 class="section-heading" id="v3-trust-title">Built on Real Results</h2>
+        <p class="v3-trust-intro">We prefer showing our actual editing over unverified ratings or made-up client quotes. Explore finished work, see clear starting prices and talk directly with the editor.</p>
+        <div class="v3-trust-grid">
+          <article class="v3-trust-card"><span>01 / PROOF</span><strong>4 real video projects</strong><p>Typography, gaming, color-graded reel and promotional edit—play the actual files before ordering.</p><a href="#results">Watch completed work ↗</a></article>
+          <article class="v3-trust-card"><span>02 / CLARITY</span><strong>Transparent starting rates</strong><p>Rs. 500 / 1,000 / 1,500. Scope, revisions and turnaround can be checked before you book.</p><a href="#pricing">Compare packages ↗</a></article>
+          <article class="v3-trust-card"><span>03 / CONTACT</span><strong>Talk directly on WhatsApp</strong><p>No payment at enquiry. Share a brief, get confirmation and agree on the deliverables first.</p><a href="#order">Send your brief ↗</a></article>
+        </div>
+        <p class="v3-trust-footnote">Verified customer testimonials can be added here when clients provide permission and genuine feedback.</p>
+      </div>
+    </section>
     <section class="section faq faq--premium" id="faq" aria-labelledby="faq-title">
   <div class="container">
     <p class="section-label">GET THE ANSWERS</p>
@@ -1066,13 +1138,14 @@
     <div class="portfolio-dialog" role="dialog" aria-modal="true" aria-labelledby="portfolio-player-title" tabindex="-1">
       <div class="portfolio-dialog-top">
         <div><span class="portfolio-dialog-kicker">RBG EDITX / AFTER RESULT</span><h2 id="portfolio-player-title">Portfolio Video</h2></div>
-        <button class="portfolio-close" type="button" data-close-player aria-label="Close video player">✕</button>
+        <div class="v3-modal-actions"><button id="v3-fullscreen" type="button" aria-label="Watch video fullscreen">⛶ <span>Fullscreen</span></button><button class="portfolio-close" type="button" data-close-player aria-label="Close video player">✕</button></div>
       </div>
       <div class="portfolio-video-shell"><video id="portfolio-video" controls playsinline preload="none" aria-label="Portfolio video player"></video></div>
       <div class="portfolio-dialog-bottom"><span>Original edit • sound enabled in the player</span><a href="#order" id="portfolio-modal-order" class="portfolio-modal-order" data-service="Other Project">Order this style ↗</a></div>
     </div>
   </div>
   <footer class="footer"><div class="container"><a class="brand" href="#home">RBG EDITX</a><p>Professional Video Editing • Motion Graphics • Gaming Content</p><small>© <span id="current-year">2026</span> RBG EDITX. All Rights Reserved.</small></div></footer>
+  <div class="v3-mobile-bottom" aria-label="Quick project enquiry"><span>Ready for an edit?<small>Start from Rs. 500</small></span><a href="#order">Get a Quote ↗</a></div>
   <button class="floating-wa" type="button" data-whatsapp aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.52 3.48A11.84 11.84 0 0 0 12.08 0C5.5 0 .14 5.35.13 11.94c0 2.11.55 4.16 1.61 5.97L0 24l6.25-1.64a11.96 11.96 0 0 0 5.71 1.45h.01c6.58 0 11.94-5.35 11.95-11.94a11.87 11.87 0 0 0-3.4-8.39Zm-8.55 18.3a9.9 9.9 0 0 1-5.06-1.39l-.36-.22-3.77.99 1.01-3.68-.24-.38a9.91 9.91 0 0 1-1.51-5.17c0-5.47 4.45-9.91 9.94-9.91a9.87 9.87 0 0 1 7.02 2.91 9.89 9.89 0 0 1 2.88 7.03c0 5.47-4.45 9.92-9.91 9.92Zm5.44-7.42c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.66.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.64.07a8.13 8.13 0 0 1-2.4-1.48 9.01 9.01 0 0 1-1.66-2.07c-.18-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.66-1.59-.91-2.17-.24-.57-.49-.49-.66-.5h-.56c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.88 1.22 3.08a11.36 11.36 0 0 0 4.35 3.85 3.85 0 0 0 2.22.53 3.52 3.52 0 0 0 2.3-1.62c.28-.4.28-.75.2-.82-.07-.07-.27-.2-.57-.35Z"/></svg>WhatsApp</button>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script>
@@ -1296,5 +1369,6 @@
     }));
     document.querySelector('#current-year').textContent = new Date().getFullYear();
   </script>
+  <script defer src="rbg-v3.js"></script>
 </body>
 </html>
